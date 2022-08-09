@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato de escritorio 
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+/* Variables*/
+/* Inicio de la Media Query para dispositivos de tipo escritorio */
+@media (min-width: 992px) {
+  body {
+    font-family: "Montserrat";
+  }
+
+  /* Inicio de página: /page--front (/home) *********************************
+  ***************************************************************************
+  ff************************************************************************/
+  .pagina_frontal {
+    padding: 50px 100px;
+    /* The image used */
+    background-image: url("back.jpg");
+    /* Full height */
+    height: 555px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pagina_frontal .menu_principal {
+    position: absolute;
+    z-index: 1;
+    top: 72px;
+    left: 75px;
+    padding: 10px;
+    backdrop-filter: blur(20px) saturate(138%);
+    -webkit-backdrop-filter: blur(20px) saturate(138%);
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  .pagina_frontal .menu_principal nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .pagina_frontal .menu_principal nav ul li {
+    font-size: 22px;
+    margin: 30px 0px;
+  }
+  .pagina_frontal .menu_principal nav ul li a {
+    color: #c6c8c8;
+    transition: 1s;
+  }
+  .pagina_frontal .menu_principal nav ul li a:hover {
+    color: #ffffff;
+  }
+  .pagina_frontal .menu_principal_movil {
+    display: none;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser {
+    display: flex;
+    padding: 60px 80px 60px 80px;
+    backdrop-filter: blur(20px) saturate(138%);
+    -webkit-backdrop-filter: blur(20px) saturate(138%);
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_1 .fotografia {
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_1 .fotografia img {
+    width: 400px;
+    height: 400px;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 {
+    margin-left: 40px;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .nombre {
+    font-size: 63px;
+    font-weight: bolder;
+    color: #000;
+    text-align: right;
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .apellidos {
+    font-size: 36px;
+    text-align: right;
+    font-style: oblique;
+    color: #c6c8c8;
+    font-weight: bold;
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .area_profesional {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .body {
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+    border-left: 5px solid #c6c8c8;
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias {
+    font-size: 16px;
+    color: #c6c8c8;
+    cursor: default;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias .contenedor div {
+    text-align: center;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico {
+    cursor: default;
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico .correo_electronico {
+    cursor: default;
+    width: 50%;
+    text-align: left;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico .numero_telefonico {
+    cursor: default;
+    width: 50%;
+    text-align: right;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .curriculum_vitae {
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .curriculum_vitae a {
+    background-color: transparent;
+    font-size: 16px;
+    color: #c6c8c8;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 2s;
+  }
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .curriculum_vitae a:hover {
+    border: 1px solid #c6c8c8;
+  }
+  /* Fin de página: /page--front (/home) ************************************
+  ***************************************************************************
+  ff************************************************************************/
+  .feed_icon {
+    display: none;
+  }
+
+  /* Inicio de página: /experiencia (/node/25) *****************************
+  **************************************************************************
+  ff************************************************************************/
+  /* Creación de la página: /experiencia (/node/25) */
+  .pagina_experiencia {
+    padding: 50px 50px 30px 120px;
+    height: 580px;
+    /* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+    background-image: url("back.jpg");
+    /* Asignar efecto paralllax (profundidad al "fondo de la pantalla") */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pagina_experiencia .menu_principal {
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    left: 50px;
+    padding: 10px;
+    backdrop-filter: blur(20px) saturate(138%);
+    -webkit-backdrop-filter: blur(20px) saturate(138%);
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  .pagina_experiencia .menu_principal nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .pagina_experiencia .menu_principal nav ul li {
+    font-size: 22px;
+    margin: 30px 0px;
+  }
+  .pagina_experiencia .menu_principal nav ul li a {
+    color: #c6c8c8;
+    transition: 2s;
+  }
+  .pagina_experiencia .menu_principal nav ul li a:hover {
+    color: #fff;
+  }
+  .pagina_experiencia .menu_principal:hover {
+    transition: 1s;
+    box-shadow: rgba(252, 124, 33, 0.4) -5px 5px, rgba(252, 124, 33, 0.3) -10px 10px, rgba(252, 124, 33, 0.2) -15px 15px, rgba(252, 124, 33, 0.1) -20px 20px, rgba(252, 124, 33, 0.05) -25px 25px;
+  }
+  .pagina_experiencia .menu_principal:hover a {
+    color: #ffd9a1;
+  }
+  .pagina_experiencia .menu_principal_movil {
+    display: none;
+  }
+  .pagina_experiencia .menu_header_experiencia {
+    display: none;
+  }
+  .pagina_experiencia .menu_footer_experiencia {
+    display: none;
+  }
+  .pagina_experiencia .menu_header_experiencia_naranja {
+    display: none;
+  }
+  .pagina_experiencia .menu_footer_experiencia_azul {
+    display: none;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div {
+    display: block;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser {
+    font-size: 12px;
+    padding: 30px;
+    height: 200px;
+    cursor: default;
+    backdrop-filter: blur(50px) saturate(138%);
+    -webkit-backdrop-filter: blur(50px) saturate(138%);
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .fechas, .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .fecha {
+    color: #052029;
+    font-size: 30px;
+    text-align: right;
+    font-weight: bolder;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .title {
+    text-align: right;
+    pointer: default;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .title a {
+    text-decoration: none;
+    color: #c6c8c8;
+    font-size: 28px;
+    font-style: oblique;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tipo_de_empleo {
+    margin-top: 20px;
+    text-align: left;
+    color: #ffd9a1;
+    font-size: 12px;
+    font-style: oblique;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .body {
+    text-align: justify;
+    color: #c6c8c8;
+    font-size: 12px;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas {
+    text-align: left;
+    color: #ffd9a1;
+    font-size: 12px;
+    font-style: oblique;
+    width: 100%;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas div {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas div div {
+    display: block;
+    text-align: center;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser:hover {
+    transition: 1s;
+    box-shadow: rgba(7, 234, 242, 0.5) 5px 5px, rgba(7, 234, 242, 0.3) 10px 10px, rgba(7, 234, 242, 0.2) 15px 15px, rgba(7, 234, 242, 0.1) 20px 20px, rgba(7, 234, 242, 0.05) 25px 25px;
+  }
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser:hover .title a {
+    color: #07eaf2;
+    transition: 1s;
+  }
+
+  /* Fin de página: /experiencia (/node/25) ********************************
+  **************************************************************************
+  *************************************************************************/
+}
+/* Fin de la Media Query para dispositivos de tipo escritorio */
+
+/*# sourceMappingURL=style.css.map */

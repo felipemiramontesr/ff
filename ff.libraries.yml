@@ -1,0 +1,11 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+      css/mobileStyle.css: {}
+      css/normalize.css: {}
+global-js:
+  js:
+    js/paginaExperienciaMenusNeonEffect.js: {}
+  dependencies:
+    - core/jquery

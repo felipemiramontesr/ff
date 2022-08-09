@@ -1,0 +1,479 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato movil
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+
+/* Variables*/
+$naranja1: rgb(252, 124, 33);
+$naranja2: #ffd9a1;
+$blanco: #c6c8c8;
+$azul:  rgb(148, 235, 238);
+
+$layout-breakpoint: 576px;
+
+/* Inicio de la Media Query para dispositivos de tipo movil */
+@media (max-width: $layout-breakpoint) {
+	body{
+		font-family: "Montserrat"; 
+	}
+
+	/* Inicio de página: /page--front (/home) *********************************
+	***************************************************************************
+	ff************************************************************************/
+	.pagina_frontal{
+		background-image: url("back.jpg");
+		width: 92%;
+		padding: 4%;
+
+		#block-views-block-tarjeta-de-presentacion-block-1{
+			div{
+				div{
+					div{
+						.node_tarjeta_de_presentacion_teaser{
+							display: block;
+							text-align: center;
+							padding: 1.25em;
+							backdrop-filter: blur(20px) saturate(138%);
+						    -webkit-backdrop-filter: blur(20px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+						    cursor: default;
+							
+							.box_1{
+								text-align: center;
+								.fotografia{
+									cursor: default;
+									img{
+										width: 250px;
+						    			height: 250px;
+						   				border-radius: 1000px;
+						   				-moz-border-radius: 1000px;
+						   				-webkit-border-radius: 1000px;
+									}		
+								}
+							}
+							
+							.box_2{
+
+								.nombre{
+									margin-top:  0.2em;
+									font-size: 2.5em;
+									font-weight: bolder;
+									color: $blanco;
+									text-align:center;
+									cursor: default;	
+								}
+
+								.apellidos{
+									margin-top: 0.2em;
+									font-size: 1.7em;
+									text-align: center;
+									font-style: oblique;
+									color: $blanco;
+									font-weight: bold;
+									cursor: default;
+
+								}
+
+								.area_profesional{
+									margin-top: 0.5em;
+									padding-bottom:  0.4em;
+									font-size: 0.9em;
+									color: $naranja2;
+									font-weight: bold;
+									cursor: default;
+								}
+
+								.body{
+									margin-top: 0.625em;
+									border-top: 0.06em solid $blanco;
+									border-bottom: 0.06em solid $blanco;
+									font-size: 0.9em;
+									color: $blanco;
+									text-align: center;
+									cursor: default;
+								}
+
+								.tecnologias{
+									margin-top: 1.25em;
+									font-size: 0.9em;
+									color: $naranja2;
+									font-weight: bold;
+									cursor: default;
+									
+									.contenedor{
+										display: grid;
+										gap: 0.625em;
+										grid-template-columns: 1fr 1fr 1fr 1fr;
+
+										div{
+											text-align: center;
+										}
+									}	
+								}
+
+								.correo_electronico_numero_telefonico{
+									cursor: default;
+									display: block;
+									border-top: 0.06em solid $blanco;
+									border-bottom: 0.06em solid $blanco;
+									padding-top:0.625em;
+									padding-bottom:0.625em;
+									margin-top: 2em;
+									color: $blanco;
+									font-weight: bold;
+
+									.correo_electronico{
+										cursor: default;
+										text-align: center;
+									}
+
+									.numero_telefonico{
+										margin-top: 0.625em;
+										cursor: default;
+										text-align: center;
+									}
+								}
+
+								.curriculum_vitae{
+									width: 100%;
+									margin-top: 0.8em;
+									text-align: center;
+
+									a{
+										width:100%;
+										font-size: 1.2em;
+										font-weight: bold;
+										background-color: $naranja2;
+										border: 1px solid $naranja2;
+										color: #474747;
+										padding: 10px 0px;
+										text-align: center;
+										text-decoration: none;
+										display: inline-block;
+										margin: 4px 2px;
+										cursor: pointer;
+										border-radius: 5px;
+									}
+								}
+
+								.iconos{}
+							}
+						}
+					}
+				}
+			}
+		}
+		.menu_principal_movil{
+			margin-top: 1.25em;
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					gap: 0.625em;
+					grid-template-columns: 1fr 1fr;
+					
+					li{
+						padding-top: 3.2em;
+						padding-bottom: 3.2em;
+						backdrop-filter: blur(20px) saturate(138%);
+					    -webkit-backdrop-filter: blur(20px) saturate(138%);
+					    background-color: rgba(255, 255, 255, 0.14);
+					    border-radius: 12px;
+					    border: 1px solid rgba(209, 213, 219, 0.3);
+						
+						a{
+							font-size: 2.5em;
+							color: $naranja2;
+							transition: 1s;
+							text-decoration: none;
+
+							span{
+								display: block;
+								margin-top:0.25em;
+								font-size: 0.5em;
+								color: $naranja2;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.menu_principal{
+			display: none;
+		}	
+	}
+	/* Fin de página: /page--front (/home) ************************************
+	***************************************************************************
+	ff************************************************************************/
+
+	
+	//Ocultar "Suscribe"
+	.feed_icon{
+		display: none
+	}
+
+	/* Inicio de página: /experiencia (/node/25) *****************************
+	**************************************************************************
+	ff************************************************************************/
+
+	/* Creación de la página: /experiencia (/node/25) */
+	.pagina_experiencia{
+		display: block;
+		width: 92%;
+		padding: 4%;
+		/* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+		background-image: url("back.jpg");
+
+		.menu_principal{
+			display: none;
+		}
+		.menu_header_experiencia{
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 0px 0px 20px 20px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: #ffffff;
+						}
+
+					}
+				}
+			}
+		}
+		.menu_header_experiencia_naranja{
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 0px 0px 20px 20px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			/*Efecto neón*/
+			box-shadow: rgba(252, 124, 33, 0.5) 0px 5px, 
+						rgba(252, 124, 33, 0.3) 0px 10px, 
+						rgba(252, 124, 33, 0.2) 0px 15px, 
+						rgba(252, 124, 33, 0.1) 0px 20px, 
+						rgba(252, 124, 33, 0.05) 0px 25px;
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: $naranja2;
+						}
+
+					}
+				}
+			}
+		}
+		//Block experiencia
+		#block-views-block-experiencia-block-1{
+		margin-top: 3.5em;
+		margin-bottom: 3.5em;
+			div{
+				div{
+					display: grid;
+					gap: 20px;
+					grid-template-columns: 1fr;
+					div{
+						display: block;
+
+						.node_experiencia_teaser{
+							font-size: 12px;
+							padding: 30px;
+							height: 400px;
+							cursor: default;
+							backdrop-filter: blur(50px) saturate(138%);
+						    -webkit-backdrop-filter: blur(50px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+
+						    .fechas, .fecha{
+						    	color: #052029;
+						    	font-size: 30px;
+						    	text-align: right;
+						    	font-weight: bolder;
+						    }
+
+						    .title{
+						    	text-align: right;
+						    	pointer: default;
+						    	a{
+						    		text-decoration: none;
+						    		color: $blanco;
+							    	font-size: 28px;
+							    	font-style: oblique
+						    	}
+						    }
+						    .tipo_de_empleo{
+						    	margin-top: 20px;
+						    	text-align: left;
+						    	color: $naranja2;
+						    	font-size: 12px;
+						    	font-style: oblique
+						    }
+						    .body{
+						    	text-align: justify;
+						    	color: $blanco;
+						    	font-size: 12px;
+						    }
+
+							.tecnologias_empleadas{
+								text-align: left;
+						    	color: $naranja2;
+						    	font-size: 12px;
+						    	font-style: oblique;
+						    	width: 100%;
+								div{
+									display: grid;
+									gap:5px;
+									grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+									div{
+										display: block;
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+				}
+			}	
+		}
+		.menu_footer_experiencia{
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 20px 20px 0px 0px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: #ffffff;
+						}
+
+					}
+				}
+			}
+		}
+		.menu_footer_experiencia_azul{
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 20px 20px 0px 0px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			/*Efecto neón*/
+			box-shadow: rgba(7, 234, 242, 0.5) 0px -5px, 
+						rgba(7, 234, 242, 0.3) 0px -10px, 
+						rgba(7, 234, 242, 0.2) 0px -15px, 
+						rgba(7, 234, 242, 0.1) 0px -20px, 
+						rgba(7, 234, 242, 0.05) 0px -25px;
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: $azul;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	/* Fin de página: /experiencia (/node/25) ********************************
+	**************************************************************************
+	*************************************************************************/
+
+
+
+
+}
+/* Fin de la Media Query para dispositivos de tipo escritorio */

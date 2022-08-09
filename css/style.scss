@@ -1,0 +1,375 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato de escritorio 
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+
+/* Variables*/
+$naranja: #fc7c21;
+$color_primario: #c6c8c8;
+$azul:  #07eaf2;
+$layout-breakpoint: 992px;
+
+
+/* Inicio de la Media Query para dispositivos de tipo escritorio */
+@media (min-width: $layout-breakpoint) {
+
+	body{
+		font-family: "Montserrat"; 
+	}
+
+	/* Inicio de página: /page--front (/home) *********************************
+	***************************************************************************
+	ff************************************************************************/
+	.pagina_frontal{
+		padding: 50px 100px;
+		
+		/* The image used */
+		background-image: url("back.jpg");
+		/* Full height */
+		height: 555px;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+
+		.menu_principal{
+			position: absolute;
+			z-index: 1;
+			top: 72px;
+			left: 75px;
+			padding: 10px;
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+		    border-radius: 12px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+			nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					li{
+						font-size: 22px;
+						margin: 30px 0px;
+						
+						a{
+							color: $color_primario;
+							transition: 1s;
+						}
+						a:hover{
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		.menu_principal_movil{
+			display: none;
+		}
+		#block-views-block-tarjeta-de-presentacion-block-1{
+			div{
+				div{
+					div{
+						.node_tarjeta_de_presentacion_teaser{
+							display: flex;
+							padding: 60px 80px 60px 80px;
+							backdrop-filter: blur(20px) saturate(138%);
+						    -webkit-backdrop-filter: blur(20px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+						    cursor: default;
+							.box_1{
+								.fotografia{
+									cursor: default;
+									img{
+										width: 400px;
+						    			height: 400px;
+						   				border-radius: 1000px;
+						   				-moz-border-radius: 1000px;
+						   				-webkit-border-radius: 1000px;
+									}		
+								}
+							}
+							.box_2{
+								margin-left: 40px;
+								.nombre{
+									font-size: 63px;
+									font-weight: bolder;
+									color: #000;
+									text-align: right;
+									cursor: default;	
+								}
+								.apellidos{
+									font-size: 36px;
+									text-align: right;
+									font-style: oblique;
+									color: $color_primario;
+									font-weight: bold;
+									cursor: default;
+
+								}
+								.area_profesional{
+									margin-top: 20px;
+									font-size: 30px;
+									font-weight: bold;
+									cursor: default;
+								}
+								.body{
+									padding-left: 20px;
+									margin-top: 20px;
+									font-size: 18px;
+									color: #000;
+									text-align: justify;
+									border-left: 5px solid $color_primario;
+									cursor: default;
+								}
+								.tecnologias{
+									font-size: 16px;
+									color: #c6c8c8;
+									cursor: default;
+									.contenedor{
+										display: grid;
+										grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+										div{
+											text-align: center;
+										}
+									}	
+								}
+
+								.correo_electronico_numero_telefonico{
+									cursor: default;
+									display: flex;
+									margin-top: 20px;
+									font-size: 18px;
+									font-weight: bold;
+									color: #000;
+									.correo_electronico{
+										cursor: default;
+										width: 50%;
+										text-align: left;
+									}
+									.numero_telefonico{
+										cursor: default;
+										width: 50%;
+										text-align: right;
+									}
+								}
+
+								.curriculum_vitae{
+										width: 100%;
+										margin-top: 20px;
+										text-align: right;
+										a{
+										  background-color: transparent;
+										  font-size: 16px;
+										  color: #c6c8c8;
+										  padding: 10px;
+										  text-align: center;
+										  text-decoration: none;
+										  display: inline-block;
+										  margin: 4px 2px;
+										  cursor: pointer;
+										  border-radius: 5px;
+										  border: 1px solid transparent;
+										  transition: 2s;
+										}
+										a:hover{
+											border: 1px solid #c6c8c8;
+										}
+								}
+
+								.iconos{
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+	/* Fin de página: /page--front (/home) ************************************
+	***************************************************************************
+	ff************************************************************************/
+
+	
+	//Ocultar "Suscribe"
+	.feed_icon{
+		display: none
+	}
+
+	/* Inicio de página: /experiencia (/node/25) *****************************
+	**************************************************************************
+	ff************************************************************************/
+
+	/* Creación de la página: /experiencia (/node/25) */
+	.pagina_experiencia{		
+		padding: 50px 50px 30px 120px;
+		height: 580px;
+
+		/* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+		background-image: url("back.jpg");
+
+		/* Asignar efecto paralllax (profundidad al "fondo de la pantalla") */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+
+		.menu_principal{
+
+			position: absolute;
+
+			z-index: 1;
+
+			top: 82px;
+			left: 50px;
+
+			padding: 10px;
+
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+		    border-radius: 12px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					li{
+						font-size: 22px;
+						margin: 30px 0px;
+						
+						a{
+							color: $color_primario;
+							transition: 2s;
+						}
+						a:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.menu_principal:hover{
+			transition: 1s;
+			box-shadow: rgba(252, 124, 33, 0.4) -5px 5px, rgba(252, 124, 33, 0.3) -10px 10px, rgba(252, 124, 33, 0.2) -15px 15px, rgba(252, 124, 33, 0.1) -20px 20px, rgba(252, 124, 33, 0.05) -25px 25px;
+			a{
+				color: #ffd9a1;
+			}
+		}
+		.menu_principal_movil{
+			display: none;
+		}
+
+		.menu_header_experiencia{
+			display: none;
+		}
+		
+		.menu_footer_experiencia{
+			display: none;
+		}
+
+		.menu_header_experiencia_naranja{
+			display: none;
+		}
+		
+		.menu_footer_experiencia_azul{
+			display: none;
+		}
+		//Block experiencia
+		#block-views-block-experiencia-block-1{
+			div{
+				div{
+					display: grid;
+					gap: 30px;
+					grid-template-columns: 1fr 1fr 1fr;
+					div{
+						display: block;
+						.node_experiencia_teaser{
+							font-size: 12px;
+							padding: 30px;
+							height: 200px;
+							cursor: default;
+
+							backdrop-filter: blur(50px) saturate(138%);
+						    -webkit-backdrop-filter: blur(50px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+
+						    .fechas, .fecha{
+						    	color: #052029;
+						    	font-size: 30px;
+						    	text-align: right;
+						    	font-weight: bolder;
+						    }
+						    .title{
+						    	text-align: right;
+						    	pointer: default;
+						    	a{
+						    		text-decoration: none;
+						    		color: $color_primario;
+							    	font-size: 28px;
+							    	font-style: oblique
+						    	}
+						    }
+						    .tipo_de_empleo{
+						    	margin-top: 20px;
+						    	text-align: left;
+						    	color: #ffd9a1;
+						    	font-size: 12px;
+						    	font-style: oblique
+						    }
+						    .body{
+						    	text-align: justify;
+						    	color: $color_primario;
+						    	font-size: 12px;
+						    }
+
+							.tecnologias_empleadas{
+								text-align: left;
+						    	color: #ffd9a1;
+						    	font-size: 12px;
+						    	font-style: oblique;
+						    	width: 100%;
+								div{
+									display: grid;
+									gap:5px;
+									grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+									div{
+										display: block;
+										text-align: center;
+									}
+								}
+							}
+						}
+						.node_experiencia_teaser:hover{
+							transition: 1s;
+							box-shadow: rgba(7, 234, 242, 0.5) 5px 5px, rgba(7, 234, 242, 0.3) 10px 10px, rgba(7, 234, 242, 0.2) 15px 15px, rgba(7, 234, 242, 0.1) 20px 20px, rgba(7, 234, 242, 0.05) 25px 25px;
+							.title{
+								a{
+									color: #07eaf2;
+									transition: 1s;
+								}
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+	/* Fin de página: /experiencia (/node/25) ********************************
+	**************************************************************************
+	*************************************************************************/
+
+
+
+
+}
+/* Fin de la Media Query para dispositivos de tipo escritorio */

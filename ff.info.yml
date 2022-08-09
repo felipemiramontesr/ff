@@ -1,0 +1,23 @@
+name: FF
+type: theme
+description: Drupal 8 Theme; Felipe de Jesús, Personal Web
+core: 8.x
+screenshot: screenshot.png
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+libraries:
+  - ff/global-css
+  - ff/global-js
+regions:
+  content: 'Main Content'
+  section_1: 'Section one'
+  section_2: 'Section two'
+  section_3: 'Section three'
+  section_4: 'Section four'
+  section_5: 'Section fivee'
+  section_6: 'Section six'
+  section_7: 'Section seven'
+  section_8: 'Section eight'
+  
+
