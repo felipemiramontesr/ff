@@ -12,14 +12,13 @@ $( document ).ready(function() {
     //Se inicializa la escucha del scroll dentro de la página  
     window.addEventListener("scroll", function(){
 
-        //Se asigna a una nueva variable (st) el valor actual de 'Y' al mover el scroll.
+        //Se asigna a una nueva variable (st) el valor actual de la posición 'Y' del scroll.
         let st = window.pageYOffset || document.documentElement.scrollTop; 
 
-        //Condicional comparativo entre el valor actual (st) y el ultimo valor guardado (lastScrollTop)
+        // => 'st' > 'lastScrollTop' :  cambiar la clase al elemento DOM (on/off)
         if (st > lastScrollTop){
 
-            //Si 'st' contiene algún valor, tal que: 'st > lastScrollTop' : cambiar la clase al elemento DOM (on/off)
-           
+            //Si 'st' contiene algún valor | 'st > lastScrollTop' .           
             //Neón naranja: on (JQuery)
             $("#menu_header_experiencia").removeClass("menu_header_experiencia")
             $("#menu_header_experiencia").addClass("menu_header_experiencia_naranja");
@@ -40,7 +39,7 @@ $( document ).ready(function() {
             header.className ='menu_header_experiencia_naranja';
             */
 
-        //Si 'st' contiene cualquier otro valor, tal que: 'st > lastScrollTop' : cambiar clase al elemento DOM (on/off)
+        // => 'st' != 'lastScrollTop' : cambiar clase al elemento DOM (on/off)
         }else{
                     
             //Neón azul: on (JQuery)
@@ -64,8 +63,8 @@ $( document ).ready(function() {
             footer.className ='menu_header_experiencia';
             */           
         }
-
-        //Se asigna el valor actual de 'Y' (st) como ultimo valor del scroll (lastScrollTop)
+        /*Se asigna el valor actual de la posición 'Y' del scroll (st) a la variable que 
+        guarda el ultimo valor de la posición 'Y' del scroll (lastScrollTop)*/
         lastScrollTop = st;
 
     }, false);
