@@ -20,12 +20,20 @@ $( document ).ready(function() {
 
             //Si 'st' contiene algún valor | 'st > lastScrollTop' .           
             //Neón naranja: on (JQuery)
-            $("#menu_header_experiencia").removeClass("menu_header_experiencia")
-            $("#menu_header_experiencia").addClass("menu_header_experiencia_naranja");
+            //$("#menu_header_experiencia").removeClass("menu_header_experiencia")
+            //$("#menu_header_experiencia").addClass("menu_header_experiencia_naranja");
+
+            //Código optimizado
+            //Neón naranja: on (JQuery)
+            $("#menu_header_experiencia").removeClass("menu_header_experiencia").addClass("menu_header_experiencia_naranja");
 
             //Neón azul: off (JQuery)
-            $("#menu_footer_experiencia").removeClass("menu_footer_experiencia_azul")
-            $("#menu_footer_experiencia").addClass("menu_footer_experiencia");
+            //$("#menu_footer_experiencia").removeClass("menu_footer_experiencia_azul")
+            //$("#menu_footer_experiencia").addClass("menu_footer_experiencia");
+
+             //Código optimizado
+             //Neón azul: off (JQuery)
+             $("#menu_footer_experiencia").removeClass("menu_footer_experiencia_azul").addClass("menu_footer_experiencia");
 
             //Neón azul: off (Vanilla)
             /*
@@ -43,13 +51,21 @@ $( document ).ready(function() {
         }else{
                     
             //Neón azul: on (JQuery)
-            $("#menu_footer_experiencia").removeClass("menu_footer_experiencia");
-            $("#menu_footer_experiencia").addClass("menu_footer_experiencia_azul");
+            // $("#menu_footer_experiencia").removeClass("menu_footer_experiencia");
+            // $("#menu_footer_experiencia").addClass("menu_footer_experiencia_azul");
+
+            //Código optimizado
+            //Neón azul: on (JQuery)
+            $("#menu_footer_experiencia").removeClass("menu_footer_experiencia").addClass("menu_footer_experiencia_azul");
+
 
             //Neón naranja: off (JQuery)
-            $("#menu_header_experiencia").removeClass("menu_header_experiencia_naranja");
-            $("#menu_header_experiencia").addClass("menu_header_experiencia");
-  
+            //$("#menu_header_experiencia").removeClass("menu_header_experiencia_naranja");
+            //$("#menu_header_experiencia").addClass("menu_header_experiencia");
+            
+            //Código optimizado
+             //Neón naranja: off (JQuery)
+            $("#menu_header_experiencia").removeClass("menu_header_experiencia_naranja").addClass("menu_header_experiencia")
 
             //Neón azul: on (Vanilla)
             /*
