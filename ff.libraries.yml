@@ -3,6 +3,8 @@ global-css:
     theme:
       css/style.css: {}
       css/mobileStyle.css: {}
+      css/mobileStyleExperienciaPage.css: {}
+      css/mobileStyleFrontPage.css: {}
       css/normalize.css: {}
 global-js:
   js:

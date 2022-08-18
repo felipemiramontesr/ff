@@ -1,0 +1,265 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato movil
+para la página (/node/25): https://felipemiramontesr.net/experiencia */
+/* 18/08/2022 */
+
+/* Variables*/
+$naranja1: rgb(252, 124, 33);
+$naranja2: rgb(255, 217, 161);
+$blanco: rgb(198, 200, 200);
+$azul:  rgb(148, 235, 238);
+
+$layout-breakpoint: 576px;
+
+/* Inicio de la Media Query para dispositivos de tipo movil */
+@media (max-width: $layout-breakpoint) {
+	body{
+		font-family: "Montserrat"; 
+	}
+
+	/* Creación de la página (/node/25): /experiencia */
+	.pagina_experiencia{
+		display: block;
+		width: 92%;
+		padding: 4%;
+
+		/* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+		background-image: url("back.jpg");
+
+		.menu_principal{
+			display: none;
+		}
+
+		.menu_header_experiencia{
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 0px 0px 20px 20px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					    font-size: 24px;
+
+						a{
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		.menu_header_experiencia_naranja{
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 0px 0px 20px 20px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			/*Efecto neón*/
+			box-shadow: rgba(252, 124, 33, 0.5) 0px 5px, 
+						rgba(252, 124, 33, 0.3) 0px 10px, 
+						rgba(252, 124, 33, 0.2) 0px 15px, 
+						rgba(252, 124, 33, 0.1) 0px 20px, 
+						rgba(252, 124, 33, 0.05) 0px 25px;
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: $naranja2;
+						}
+
+					}
+				}
+			}
+		}
+		//Block experiencia
+		#block-views-block-experiencia-block-1{
+		margin-top: 3.5em;
+		margin-bottom: 3.5em;
+			div{
+				div{
+					display: grid;
+					gap: 20px;
+					grid-template-columns: 1fr;
+					div{
+						display: block;
+
+						.node_experiencia_teaser{
+							font-size: 12px;
+							padding: 30px;
+							height: 400px;
+							cursor: default;
+							backdrop-filter: blur(50px) saturate(138%);
+						    -webkit-backdrop-filter: blur(50px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+
+						    .fechas, .fecha{
+						    	color: #052029;
+						    	font-size: 30px;
+						    	text-align: right;
+						    	font-weight: bolder;
+						    }
+
+						    .title{
+						    	text-align: right;
+						    	pointer: default;
+						    	a{
+						    		text-decoration: none;
+						    		color: $blanco;
+							    	font-size: 28px;
+							    	font-style: oblique
+						    	}
+						    }
+						    .tipo_de_empleo{
+						    	margin-top: 20px;
+						    	text-align: left;
+						    	color: $naranja2;
+						    	font-size: 12px;
+						    	font-style: oblique
+						    }
+						    .body{
+						    	text-align: justify;
+						    	color: $blanco;
+						    	font-size: 12px;
+						    }
+
+							.tecnologias_empleadas{
+								text-align: left;
+						    	color: $naranja2;
+						    	font-size: 12px;
+						    	font-style: oblique;
+						    	width: 100%;
+								div{
+									display: grid;
+									gap:5px;
+									grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+									div{
+										display: block;
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+				}
+			}	
+		}
+		.menu_footer_experiencia{
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 20px 20px 0px 0px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: #ffffff;
+						}
+
+					}
+				}
+			}
+		}
+		.menu_footer_experiencia_azul{
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+
+			/* Asignar efecto Glassmorphism (efecto Frozen Cristal, apariencia de cristal) */
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+			
+			/* Efecto de doblés en patalla*/
+		    border-radius: 20px 20px 0px 0px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			/*Efecto neón*/
+			box-shadow: rgba(7, 234, 242, 0.5) 0px -5px, 
+						rgba(7, 234, 242, 0.3) 0px -10px, 
+						rgba(7, 234, 242, 0.2) 0px -15px, 
+						rgba(7, 234, 242, 0.1) 0px -20px, 
+						rgba(7, 234, 242, 0.05) 0px -25px;
+
+			nav{
+
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: $azul;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
