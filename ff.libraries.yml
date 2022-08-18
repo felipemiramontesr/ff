@@ -1,11 +1,10 @@
 global-css:
   css:
     theme:
+      css/normalize.css: {}
       css/style.css: {}
-      css/mobileStyle.css: {}
       css/mobileStyleExperienciaPage.css: {}
       css/mobileStyleFrontPage.css: {}
-      css/normalize.css: {}
 global-js:
   js:
     js/paginaExperienciaMenusNeonEffect.js: {}
