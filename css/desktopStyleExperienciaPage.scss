@@ -1,0 +1,215 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato de escritorio 
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+
+/* Variables*/
+$naranja: rgb(252, 124, 33);
+$blanco: rgb(198, 200, 200);
+$azul:  rgb(7, 234, 242);
+$layout-breakpoint: 992px;
+
+
+/* Inicio de la Media Query para dispositivos de tipo escritorio */
+@media (min-width: $layout-breakpoint) {
+
+	body{
+		font-family: "Montserrat"; 
+	}
+
+	/* Ocultar 'Suscribe' */
+	.feed_icon{
+		display: none
+	}
+
+	/* Creación de la página: /experiencia (/node/25) */
+	.pagina_experiencia{		
+		padding: 50px 50px 30px 120px;
+
+		/* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+		background-image: url("back.jpg");
+
+		.menu_principal{
+
+			position: fixed;
+
+			z-index: 1;
+
+			top: 82px;
+			left: 50px;
+
+			padding: 10px;
+
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+		    border-radius: 12px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+
+			nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					li{
+						font-size: 22px;
+						margin: 30px 0px;
+						
+						a{
+							color: $blanco;
+							transition: 2s;
+						}
+						a:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.menu_principal:hover{
+			transition: 1s;
+			box-shadow: rgba(252, 124, 33, 0.4) -5px 5px, rgba(252, 124, 33, 0.3) -10px 10px, rgba(252, 124, 33, 0.2) -15px 15px, rgba(252, 124, 33, 0.1) -20px 20px, rgba(252, 124, 33, 0.05) -25px 25px;
+			a{
+				color: #ffd9a1;
+			}
+		}
+		.menu_principal_movil{
+			display: none;
+		}
+
+		.menu_header_experiencia{
+			display: none;
+		}
+		
+		.menu_footer_experiencia{
+			display: none;
+		}
+
+		.menu_header_experiencia_naranja{
+			display: none;
+		}
+		
+		.menu_footer_experiencia_azul{
+			display: none;
+		}
+		//Block experiencia
+		#block-views-block-experiencia-block-1{
+
+			div{
+
+				div{
+					display: grid;
+					gap: 30px;
+					grid-template-columns: 1fr 1fr;
+
+					div{
+						display: block;
+
+						.node_experiencia_teaser{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            height: 255px;
+                            font-size: 12px;
+                            padding: 30px;
+                            cursor: default;
+
+                            backdrop-filter: blur(50px) saturate(138%);
+                            -webkit-backdrop-filter: blur(50px) saturate(138%);
+                            background-color: rgba(255, 255, 255, 0.14);
+                            border-radius: 12px;
+                            border: 1px solid rgba(209, 213, 219, 0.3);
+
+                            .box1{
+                                .image{
+                                    cursor: default;
+									img{
+										width: 250px;
+						    			height: 250px;
+						   				border-radius: 1000px;
+						   				-moz-border-radius: 1000px;
+						   				-webkit-border-radius: 1000px;
+
+                                        /* Modificar el brillo de las imagenes al 50% */
+                                        filter: brightness(0.5);
+									}	
+                                }
+                            }
+
+                            .box2{
+                                .title{
+                                    text-align: right;
+                                    pointer: default;
+                                    a{
+                                        text-decoration: none;
+                                        color: $blanco;
+                                        font-size: 21px;
+                                        font-style: oblique
+                                    }
+                                }
+                                .localizacion{
+                                    text-align: right;
+                                    color: $blanco;    
+                                }
+
+                                .fechas, .fecha{
+                                    margin-top: 10px;
+                                    color: #052029;
+                                    font-size: 24px;
+                                    text-align: right;
+                                    font-weight: bolder;
+                                }
+
+                                .tipo_de_empleo{
+                                    margin-top: 20px;
+                                    text-align: left;
+                                    color: #ffd9a1;
+                                    font-size: 12px;
+                                    font-style: oblique
+                                }
+                                .body{
+                                    text-align: justify;
+                                    color: $blanco;
+                                    font-size: 12px;
+                                }
+
+                                .tecnologias_empleadas{
+                                    margin-top: 20px;
+                                    text-align: left;
+                                    color: #ffd9a1;
+                                    font-size: 12px;
+                                    font-style: oblique;
+                                    width: 100%;
+                                    div{
+                                        display: grid;
+                                        gap:20px 5px;
+                                        grid-template-columns: 1fr 1fr 1fr;
+                                        div{
+                                            display: block;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                            }
+						}
+						.node_experiencia_teaser:hover{
+							transition: 1s;
+							box-shadow: rgba(7, 234, 242, 0.5) 5px 5px, rgba(7, 234, 242, 0.3) 10px 10px, rgba(7, 234, 242, 0.2) 15px 15px, rgba(7, 234, 242, 0.1) 20px 20px, rgba(7, 234, 242, 0.05) 25px 25px;
+							.title{
+								a{
+									color: #07eaf2;
+									transition: 1s;
+								}
+							}
+                            .localizacion{
+                                color: #07eaf2;
+								transition: 1s;
+                            }
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+/* Fin de la Media Query para dispositivos de tipo escritorio */

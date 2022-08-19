@@ -96,6 +96,8 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     /*Estilos para cada nodo de tipo Experiencia: node--experiencia--teaser.html.twig*/
   }
   .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser {
+    display: grid;
+    grid-template-columns: 1fr;
     font-size: 12px;
     padding: 30px;
     cursor: default;
@@ -106,21 +108,22 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     border: 1px solid rgba(209, 213, 219, 0.3);
     text-align: center;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .image {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box1 .image {
     cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .image img {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box1 .image img {
     width: 250px;
     height: 250px;
     border-radius: 1000px;
     -moz-border-radius: 1000px;
     -webkit-border-radius: 1000px;
+    /* Modificar el brillo de las imagenes al 50% */
+    filter: brightness(0.5);
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .title {
-    margin-top: 1em;
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .title {
     pointer: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .title a {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .title a {
     font-size: 2.5em;
     font-weight: bolder;
     color: #c6c8c8;
@@ -128,8 +131,8 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     cursor: default;
     text-decoration: none;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .localizacion {
-    margin-top: 0.5em;
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .localizacion {
+    margin-top: 0.25em;
     font-style: oblique;
     padding-bottom: 0.4em;
     font-size: 1.7em;
@@ -137,41 +140,39 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     font-weight: bold;
     cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .fechas, .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .fecha {
-    margin-top: 0.2em;
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .fechas, .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .fecha {
     font-size: 1.7em;
     color: #ffd9a1;
     text-align: center;
     font-weight: bold;
     cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tipo_de_empleo {
-    margin-top: 1em;
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tipo_de_empleo {
+    margin-top: 2em;
     text-align: left;
     padding-bottom: 0.4em;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ffd9a1;
-    font-weight: bold;
     cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .body {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .body {
     margin-top: -0.5em;
     text-align: justify;
     color: #c6c8c8;
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas {
     text-align: left;
     color: #ffd9a1;
     font-size: 1em;
     width: 100%;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas div {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas div {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .tecnologias_empleadas div div {
+  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas div div {
     display: block;
     text-align: center;
   }

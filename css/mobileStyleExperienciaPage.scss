@@ -127,6 +127,8 @@ $layout-breakpoint: 576px;
                         
                         /*Estilos para cada nodo de tipo Experiencia: node--experiencia--teaser.html.twig*/
 						.node_experiencia_teaser{
+							display: grid;
+                            grid-template-columns: 1fr;
 							font-size: 12px;
 							padding: 30px;
 							cursor: default;
@@ -137,7 +139,8 @@ $layout-breakpoint: 576px;
 						    border: 1px solid rgba(209, 213, 219, 0.3);
                             text-align: center;
 
-                            .image{
+							.box1{
+								.image{
                                 cursor: default;
 									img{
 										width: 250px;
@@ -145,70 +148,72 @@ $layout-breakpoint: 576px;
 						   				border-radius: 1000px;
 						   				-moz-border-radius: 1000px;
 						   				-webkit-border-radius: 1000px;
+
+										 /* Modificar el brillo de las imagenes al 50% */
+										 filter: brightness(0.5);
 									}		
-                            }
-
-						    .title{
-                                margin-top: 1em;
-						    	pointer: default;
-						    	a{
-									font-size: 2.5em;
-									font-weight: bolder;
+                           		}
+							}
+							.box2{
+								.title{
+									pointer: default;
+									a{
+										font-size: 2.5em;
+										font-weight: bolder;
+										color: $blanco;
+										text-align:center;
+										cursor: default;
+										text-decoration: none;
+									}
+								}
+	
+								.localizacion{
+									margin-top: 0.25em;
+									font-style: oblique;
+									padding-bottom:  0.4em;
+									font-size: 1.7em;
 									color: $blanco;
-									text-align:center;
+									font-weight: bold;
 									cursor: default;
-                                    text-decoration: none;
-						    	}
-						    }
-
-                            .localizacion{
-                                margin-top: 0.5em;
-                                font-style: oblique;
-								padding-bottom:  0.4em;
-								font-size: 1.7em;
-								color: $blanco;
-								font-weight: bold;
-								cursor: default;
-                            }
-
-                            .fechas, .fecha{
-                                margin-top: 0.2em;
-                                font-size: 1.7em;
-                                color: $naranja2;
-                                text-align: center;
-                                font-weight: bold;
-                                cursor: default;
-						    }
-
-						    .tipo_de_empleo{
-                                margin-top: 1em;
-                                text-align: left;
-								padding-bottom: 0.4em;
-								font-size: 1.5em;
-								color: $naranja2;
-								font-weight: bold;
-								cursor: default;
-						    }
-
-						    .body{
-                                margin-top: -0.5em;
-						    	text-align: justify;
-						    	color: $blanco;
-						    	font-size: 1.5em;
-						    }
-
-							.tecnologias_empleadas{
-								text-align: left;
-						    	color: $naranja2;
-						    	font-size: 1em;
-						    	width: 100%;
-								div{
-									display: grid;
-									gap:5px;
-									grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+								}
+	
+								.fechas, .fecha{
+									font-size: 1.7em;
+									color: $naranja2;
+									text-align: center;
+									font-weight: bold;
+									cursor: default;
+								}
+	
+								.tipo_de_empleo{
+									margin-top: 2em;
+									text-align: left;
+									padding-bottom: 0.4em;
+									font-size: 1em;
+									color: $naranja2;
+									cursor: default;
+								}
+	
+								.body{
+									margin-top: -0.5em;
+									text-align: justify;
+									color: $blanco;
+									font-size: 1.7em;
+								}
+	
+								.tecnologias_empleadas{
+									text-align: left;
+									color: $naranja2;
+									font-size: 1em;
+									width: 100%;
 									div{
-										display: block;
-										text-align: center;
+										display: grid;
+										gap:5px;
+										grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+										div{
+											display: block;
+											text-align: center;
+										}
 									}
 								}
 							}

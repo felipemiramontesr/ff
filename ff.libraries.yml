@@ -2,7 +2,8 @@ global-css:
   css:
     theme:
       css/normalize.css: {}
-      css/style.css: {}
+      css/desktopStyleFrontPage.css: {}
+      css/desktopStyleExperienciaPage.css: {}
       css/mobileStyleExperienciaPage.css: {}
       css/mobileStyleFrontPage.css: {}
 global-js:

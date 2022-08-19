@@ -1,0 +1,198 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato de escritorio 
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+
+/* Variables*/
+$naranja1: rgb(252, 124, 33);
+$naranja2: rgb(255, 217, 161);
+$blanco: rgb(198, 200, 200);
+$azul:  #94ebee;
+$layout-breakpoint: 992px;
+
+
+/* Inicio de la Media Query para dispositivos de tipo escritorio */
+@media (min-width: $layout-breakpoint) {
+
+	body{
+		font-family: "Montserrat"; 
+	}
+    
+    /* Ocultar 'Suscribe' */
+	.feed_icon{
+		display: none
+	}
+
+    /* Creación de la página (felipemiramontesr.net): /home */
+	.pagina_frontal{
+		padding: 50px 100px;
+		
+		/* The image used */
+		background-image: url("back.jpg");
+		/* Full height */
+		height: 555px;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+
+		.menu_principal{
+			position: absolute;
+			z-index: 1;
+			top: 72px;
+			left: 75px;
+			padding: 10px;
+			backdrop-filter: blur(20px) saturate(138%);
+		    -webkit-backdrop-filter: blur(20px) saturate(138%);
+		    background-color: rgba(255, 255, 255, 0.14);
+		    border-radius: 12px;
+		    border: 1px solid rgba(209, 213, 219, 0.3);
+			nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					li{
+						font-size: 22px;
+						margin: 30px 0px;
+						
+						a{
+							color: $blanco;
+							transition: 1s;
+						}
+						a:hover{
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		.menu_principal_movil{
+			display: none;
+		}
+		#block-views-block-tarjeta-de-presentacion-block-1{
+			div{
+				div{
+					div{
+						.node_tarjeta_de_presentacion_teaser{
+							display: flex;
+							padding: 60px 80px 60px 80px;
+							backdrop-filter: blur(20px) saturate(138%);
+						    -webkit-backdrop-filter: blur(20px) saturate(138%);
+						    background-color: rgba(255, 255, 255, 0.14);
+						    border-radius: 12px;
+						    border: 1px solid rgba(209, 213, 219, 0.3);
+						    cursor: default;
+							.box_1{
+								.fotografia{
+									cursor: default;
+									img{
+										width: 400px;
+						    			height: 400px;
+						   				border-radius: 1000px;
+						   				-moz-border-radius: 1000px;
+						   				-webkit-border-radius: 1000px;
+									}		
+								}
+							}
+							.box_2{
+								margin-left: 40px;
+								.nombre{
+									font-size: 63px;
+									font-weight: bolder;
+									color: #000;
+									text-align: right;
+									cursor: default;	
+								}
+								.apellidos{
+									font-size: 36px;
+									text-align: right;
+									font-style: oblique;
+									color: $blanco;
+									font-weight: bold;
+									cursor: default;
+
+								}
+								.area_profesional{
+									margin-top: 20px;
+									font-size: 30px;
+									font-weight: bold;
+									cursor: default;
+								}
+								.body{
+									padding-left: 20px;
+									margin-top: 20px;
+									font-size: 18px;
+									color: #000;
+									text-align: justify;
+									border-left: 5px solid $blanco;
+									cursor: default;
+								}
+								.tecnologias{
+									font-size: 16px;
+									color: #c6c8c8;
+									cursor: default;
+									.contenedor{
+										display: grid;
+										grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+										div{
+											text-align: center;
+										}
+									}	
+								}
+
+								.correo_electronico_numero_telefonico{
+									cursor: default;
+									display: flex;
+									margin-top: 20px;
+									font-size: 18px;
+									font-weight: bold;
+									color: #000;
+									.correo_electronico{
+										cursor: default;
+										width: 50%;
+										text-align: left;
+									}
+									.numero_telefonico{
+										cursor: default;
+										width: 50%;
+										text-align: right;
+									}
+								}
+
+								.curriculum_vitae{
+										width: 100%;
+										margin-top: 20px;
+										text-align: right;
+										a{
+										  background-color: transparent;
+										  font-size: 16px;
+										  color: #c6c8c8;
+										  padding: 10px;
+										  text-align: center;
+										  text-decoration: none;
+										  display: inline-block;
+										  margin: 4px 2px;
+										  cursor: pointer;
+										  border-radius: 5px;
+										  border: 1px solid transparent;
+										  transition: 2s;
+										}
+										a:hover{
+											border: 1px solid #c6c8c8;
+										}
+								}
+
+								.iconos{
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}
