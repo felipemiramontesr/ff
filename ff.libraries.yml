@@ -4,8 +4,10 @@ global-css:
       css/normalize.css: {}
       css/desktopStyleFrontPage.css: {}
       css/desktopStyleExperienciaPage.css: {}
-      css/mobileStyleExperienciaPage.css: {}
+      css/desktopStyleCiberblogPage.css: {}
       css/mobileStyleFrontPage.css: {}
+      css/mobileStyleExperienciaPage.css: {}
+      css/mobileStyleCiberblogPage.css: {}
 global-js:
   js:
     js/paginaExperienciaMenusNeonEffect.js: {}

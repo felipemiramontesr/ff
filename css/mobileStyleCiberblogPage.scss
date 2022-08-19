@@ -1,0 +1,167 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato movil
+para el sitio https://felipemiramontesr.net/ciberblog */
+/* 19/08/2022 */
+
+/* Variables*/
+$green: rgb(0, 196, 121);
+$lightGreen: rgb(0, 255, 159);
+$blue: rgb(0, 30, 255);
+$lightBlue: rgb(0, 184, 255);
+$purple: rgb(189, 0, 255);
+$lightPurple: rgb(235, 160, 250);
+$gray: rgb(185, 251, 208);
+$lightGray: rgb(229, 229, 229);
+$white: #edfee9;
+
+
+$layout-breakpoint: 576px;
+
+/* Inicio de la Media Query para dispositivos de tipo movil */
+@media (max-width: $layout-breakpoint) {
+	body{
+		font-family: "Montserrat"; 
+	}
+
+    /* Inicio de página: /page--front (/home) *********************************
+	***************************************************************************
+	ff************************************************************************/
+	.pagina_ciberblog{
+        width: 92%;
+		padding: 4%;
+
+		/*Menu header*/
+        .movil_header_menu_ciberblog_page{
+			background-color: $green;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+			/* Efecto de doblés en patalla*/
+		    border-radius: 0px 0px 20px 20px;
+
+            nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					    font-size: 24px;
+
+						a{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+
+		/*bloque contenedor de los nodos (Tipo de contenido: article)*/
+		.blockViewsCiberblog{
+			margin-top: 2.5em;
+			margin-bottom: 4em;
+
+			#block-views-block-ciberblog-block-1{
+				div{
+					div{
+						.views-row{
+							/*Estilo del nodo (Tipo de contenido: article) teaser */
+							.node_article_teaser{
+								display: grid;
+								grid-template-columns: 3fr 13fr;
+								padding-bottom: 1.5em;
+								padding-top: 1.5em;
+								border-top: 1px solid $gray;
+								.box1{
+									/*Fotografia del autor del tipo de contenido (article) */
+									.authorPicture{
+										img{
+											width: 60px;
+											height: 60px;
+											   border-radius: 1000px;
+											   -moz-border-radius: 1000px;
+											   -webkit-border-radius: 1000px;
+										}	
+									}
+								}
+								.box2{
+									margin-top: 0.5em;
+									.containerDateRolName{
+										font-size: 1em;
+										font-weight: lighter;
+
+										.date{
+											font-size: 14px;
+											color: $blue;
+											font-weight: bold;
+										}
+										.containerRolName{
+											font-size: 22px;
+											margin-top: 5px;
+											.rol{
+
+											}
+											.name{
+												font-weight: bold;
+												color: $lightBlue;
+											}
+										}
+									}
+									.body{
+										.image{
+											width: 100%;
+											img{
+												object-fit: fill;
+												border-radius: 20px;
+												-moz-border-radius: 20px;
+												-webkit-border-radius: 20px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/*Menu footer*/
+		.movil_footer_menu_ciberblog_page{
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			z-index: 1;
+			background-color: $blue;
+			/* Efecto de doblés en patalla*/
+		    border-radius: 20px 20px 0px 0px;
+
+			nav{
+				ul{
+					list-style: none;
+					padding-left:0;
+					text-align: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+
+					li{
+					font-size: 24px;
+
+						a{
+							color: #ffffff;
+						}
+
+					}
+				}
+			}
+		}
+
+
+
+    } /* Fin de la Media Query para dispositivos de tipo escritorio **********/
+}

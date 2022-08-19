@@ -1,0 +1,41 @@
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato de escritorio 
+para el sitio https://felipemiramontesr.net */
+/* 15/07/2022 */
+
+/* Variables*/
+$blue: #1DA1F2;
+$black: #14171A;
+$darkGray: #657786;
+$lightGray: #AAB8C2;
+$extraLightGray: #E1E8ED;
+$color: #F5F8FA;
+
+$layout-breakpoint: 992px;
+
+
+/* Inicio de la Media Query para dispositivos de tipo escritorio */
+@media (min-width: $layout-breakpoint) {
+
+	body{
+		font-family: "Montserrat"; 
+	}
+
+    /* Inicio de página: /page--front (/home) *********************************
+	***************************************************************************
+	ff************************************************************************/
+	.pagina_ciberblog{
+        width: 92%;
+		padding: 4%;
+
+		.movil_header_menu_ciberblog_page{
+			display: none;
+		}
+		.movil_footer_menu_ciberblog_page{
+			display: none;
+		}
+
+
+        
+    } /* Fin de la Media Query para dispositivos de tipo escritorio **********/
+}

@@ -9,9 +9,10 @@ $naranja2: #ffd9a1;
 $blanco: #c6c8c8;
 $azul:  rgb(148, 235, 238);
 
+/* Punto de quiebre para dispositivos moviles*/
 $layout-breakpoint: 576px;
 
-/* Inicio de la Media Query para dispositivos de tipo movil */
+/* Media Query para dispositivos de tipo movil */
 @media (max-width: $layout-breakpoint) {
 	body{
 		font-family: "Montserrat"; 

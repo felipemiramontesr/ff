@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* Ing. Felipe de Jesús Miramontes Romreo */
+/* Documento SCSS para la asignación de estilos en formato movil
+para el sitio https://felipemiramontesr.net/ciberblog */
+/* 19/08/2022 */
+/* Variables*/
+/* Inicio de la Media Query para dispositivos de tipo movil */
+@media (max-width: 576px) {
+  body {
+    font-family: "Montserrat";
+  }
+
+  /* Inicio de página: /page--front (/home) *********************************
+  ***************************************************************************
+  ff************************************************************************/
+  .pagina_ciberblog {
+    width: 92%;
+    padding: 4%;
+    /*Menu header*/
+    /*bloque contenedor de los nodos (Tipo de contenido: article)*/
+    /*Menu footer*/
+  }
+  .pagina_ciberblog .movil_header_menu_ciberblog_page {
+    background-color: #00c479;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    /* Efecto de doblés en patalla*/
+    border-radius: 0px 0px 20px 20px;
+  }
+  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul li {
+    font-size: 24px;
+  }
+  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul li a {
+    color: #edfee9;
+  }
+  .pagina_ciberblog .blockViewsCiberblog {
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row {
+    /*Estilo del nodo (Tipo de contenido: article) teaser */
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
+    display: grid;
+    grid-template-columns: 3fr 13fr;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #b9fbd0;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 {
+    /*Fotografia del autor del tipo de contenido (article) */
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 .authorPicture img {
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 {
+    margin-top: 0.5em;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName {
+    font-size: 1em;
+    font-weight: lighter;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .date {
+    font-size: 14px;
+    color: #001eff;
+    font-weight: bold;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName .name {
+    font-weight: bold;
+    color: #00b8ff;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image {
+    width: 100%;
+  }
+  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image img {
+    object-fit: fill;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+  }
+  .pagina_ciberblog .movil_footer_menu_ciberblog_page {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #001eff;
+    /* Efecto de doblés en patalla*/
+    border-radius: 20px 20px 0px 0px;
+  }
+  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul li {
+    font-size: 24px;
+  }
+  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul li a {
+    color: #ffffff;
+  }
+
+  /* Fin de la Media Query para dispositivos de tipo escritorio **********/
+}
+
+/*# sourceMappingURL=mobileStyleCiberblogPage.css.map */
