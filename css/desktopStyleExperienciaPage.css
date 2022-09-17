@@ -17,72 +17,204 @@ para el sitio https://felipemiramontesr.net */
 
   /* Creación de la página: /experiencia (/node/25) */
   .pagina_experiencia {
-    padding: 50px 50px 30px 120px;
-    /* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+    padding: 30px 100px;
+    /* The image used */
+    position: absolute;
+    top: 0;
+    bottom: 0;
     background-image: url("back.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  .pagina_experiencia .menu_principal {
-    position: fixed;
-    z-index: 1;
-    top: 82px;
-    left: 50px;
-    padding: 10px;
+  .pagina_experiencia .box-1 {
+    padding: 0px 20px 10px 20px;
+    backdrop-filter: blur(20px) saturate(138%);
+    -webkit-backdrop-filter: blur(20px) saturate(138%);
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 12px;
+  }
+  .pagina_experiencia .box-1 .row-1 {
+    height: 30px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    color: #ffd9a1;
+    font-style: oblique;
+    font-size: 10px;
+  }
+  .pagina_experiencia .box-1 .row-1 div {
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+  }
+  .pagina_experiencia .box-1 .row-2 {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr 3fr 23fr 4fr 1fr;
+    text-align: center;
+    color: #ffd9a1;
+    font-style: oblique;
+    font-size: 10px;
+  }
+  .pagina_experiencia .box-1 .row-2 div {
+    padding: 30px 0px 10px 0px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius: 0 0 30px 5px;
+    cursor: pointer;
+  }
+  .pagina_experiencia .box-1 .row-2 .r1 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r2 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r3 {
+    text-align: center;
+    transition: 1s;
+  }
+  .pagina_experiencia .box-1 .row-2 .r4 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r5 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r6 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r7 {
+    transition: 1s;
+    text-align: center;
+  }
+  .pagina_experiencia .box-1 .row-2 .r1:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r2:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r3:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r4:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r5:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r6:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-1 .row-2 .r7:hover {
+    background-color: rgba(255, 217, 161, 0.3);
+    border-left: 1px solid #ffd9a1;
+    border-right: 1px solid #ffd9a1;
+    border-bottom: 1px solid #ffd9a1;
+    color: #ffffff;
+  }
+  .pagina_experiencia .box-2 {
+    margin-top: 5px;
+  }
+  .pagina_experiencia .box-2 div {
+    display: flex;
+  }
+  .pagina_experiencia .box-2 div .menu_principal_movil {
+    display: none;
+  }
+  .pagina_experiencia .box-2 div .menu_header_experiencia {
+    display: none;
+  }
+  .pagina_experiencia .box-2 div .menu_footer_experiencia {
+    display: none;
+  }
+  .pagina_experiencia .box-2 div .menu_header_experiencia_naranja {
+    display: none;
+  }
+  .pagina_experiencia .box-2 div .menu_footer_experiencia_azul {
+    display: none;
+  }
+  .pagina_experiencia .box-2 div .menu_principal {
+    padding: 0px 10px;
     backdrop-filter: blur(20px) saturate(138%);
     -webkit-backdrop-filter: blur(20px) saturate(138%);
     background-color: rgba(255, 255, 255, 0.14);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
   }
-  .pagina_experiencia .menu_principal nav ul {
+  .pagina_experiencia .box-2 div .menu_principal nav ul {
     list-style: none;
     padding-left: 0;
     text-align: center;
   }
-  .pagina_experiencia .menu_principal nav ul li {
+  .pagina_experiencia .box-2 div .menu_principal nav ul li {
     font-size: 22px;
-    margin: 30px 0px;
+    margin: 25px 0px;
   }
-  .pagina_experiencia .menu_principal nav ul li a {
+  .pagina_experiencia .box-2 div .menu_principal nav ul li a {
     color: #c6c8c8;
     transition: 2s;
   }
-  .pagina_experiencia .menu_principal nav ul li a:hover {
+  .pagina_experiencia .box-2 div .menu_principal nav ul li a:hover {
     color: #fff;
   }
-  .pagina_experiencia .menu_principal:hover {
+  .pagina_experiencia .box-2 div .menu_principal:hover {
     transition: 1s;
     box-shadow: rgba(252, 124, 33, 0.4) -5px 5px, rgba(252, 124, 33, 0.3) -10px 10px, rgba(252, 124, 33, 0.2) -15px 15px, rgba(252, 124, 33, 0.1) -20px 20px, rgba(252, 124, 33, 0.05) -25px 25px;
   }
-  .pagina_experiencia .menu_principal:hover a {
+  .pagina_experiencia .box-2 div .menu_principal:hover a {
     color: #ffd9a1;
   }
-  .pagina_experiencia .menu_principal_movil {
-    display: none;
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 {
+    margin-left: 5px;
   }
-  .pagina_experiencia .menu_header_experiencia {
-    display: none;
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
   }
-  .pagina_experiencia .menu_footer_experiencia {
-    display: none;
-  }
-  .pagina_experiencia .menu_header_experiencia_naranja {
-    display: none;
-  }
-  .pagina_experiencia .menu_footer_experiencia_azul {
-    display: none;
-  }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div {
     display: block;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div {
+    display: block;
+  }
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 255px;
+    height: 380px;
     font-size: 12px;
     padding: 30px;
     cursor: default;
@@ -92,52 +224,51 @@ para el sitio https://felipemiramontesr.net */
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box1 .image {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box1 .image {
     cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box1 .image img {
-    width: 250px;
-    height: 250px;
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box1 .image img {
+    width: 380px;
+    height: 380px;
     border-radius: 1000px;
     -moz-border-radius: 1000px;
     -webkit-border-radius: 1000px;
-    /* Modificar el brillo de las imagenes al 50% */
     filter: brightness(0.5);
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .title {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .title {
     text-align: right;
-    pointer: default;
+    cursor: default;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .title a {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .title a {
     text-decoration: none;
     color: #c6c8c8;
     font-size: 21px;
     font-style: oblique;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .localizacion {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .localizacion {
     text-align: right;
     color: #c6c8c8;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .fechas, .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .fecha {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .fechas, .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .fecha {
     margin-top: 10px;
     color: #052029;
     font-size: 24px;
     text-align: right;
     font-weight: bolder;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tipo_de_empleo {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .tipo_de_empleo {
     margin-top: 20px;
     text-align: left;
     color: #ffd9a1;
     font-size: 12px;
     font-style: oblique;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .body {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .body {
     text-align: justify;
     color: #c6c8c8;
     font-size: 12px;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .tecnologias_empleadas {
     margin-top: 20px;
     text-align: left;
     color: #ffd9a1;
@@ -145,26 +276,141 @@ para el sitio https://felipemiramontesr.net */
     font-style: oblique;
     width: 100%;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas div {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .tecnologias_empleadas div {
     display: grid;
     gap: 20px 5px;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas div div {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia .box2 .tecnologias_empleadas div div {
     display: block;
     text-align: center;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser:hover {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia:hover {
     transition: 1s;
     box-shadow: rgba(7, 234, 242, 0.5) 5px 5px, rgba(7, 234, 242, 0.3) 10px 10px, rgba(7, 234, 242, 0.2) 15px 15px, rgba(7, 234, 242, 0.1) 20px 20px, rgba(7, 234, 242, 0.05) 25px 25px;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser:hover .title a {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia:hover .title a {
     color: #07eaf2;
     transition: 1s;
   }
-  .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser:hover .localizacion {
+  .pagina_experiencia .box-2 div #block-views-block-galeria-experiencia-block-1 div div div .node_experiencia_galeria_experiencia:hover .localizacion {
     color: #07eaf2;
     transition: 1s;
+  }
+  .pagina_experiencia .box-2 div #block-views-block-experiencia-block-1 {
+    display: none;
+    /* margin-left: 5px;
+    div{
+
+    	div{
+    		display: block;
+
+    		div{
+    			display: block;
+
+    			.node_experiencia_teaser{
+    				display: grid;
+    				grid-template-columns: 1fr 1fr;
+    				height: 400px;
+    				font-size: 12px;
+    				padding: 30px;
+    				cursor: default;
+
+    				backdrop-filter: blur(50px) saturate(138%);
+    				-webkit-backdrop-filter: blur(50px) saturate(138%);
+    				background-color: rgba(255, 255, 255, 0.14);
+    				border-radius: 12px;
+    				border: 1px solid rgba(209, 213, 219, 0.3);
+
+    				.box1{
+    					.image{
+    						cursor: default;
+    						img{
+    							width: 250px;
+    							height: 250px;
+    							border-radius: 1000px;
+    							-moz-border-radius: 1000px;
+    							-webkit-border-radius: 1000px;
+
+
+    							filter: brightness(0.5);
+    						}	
+    					}
+    				}
+
+    				.box2{
+    					.title{
+    						text-align: right;
+    						cursor: default;
+    						a{
+    							text-decoration: none;
+    							color: $blanco;
+    							font-size: 21px;
+    							font-style: oblique
+    						}
+    					}
+    					.localizacion{
+    						text-align: right;
+    						color: $blanco;    
+    					}
+
+    					.fechas, .fecha{
+    						margin-top: 10px;
+    						color: #052029;
+    						font-size: 24px;
+    						text-align: right;
+    						font-weight: bolder;
+    					}
+
+    					.tipo_de_empleo{
+    						margin-top: 20px;
+    						text-align: left;
+    						color: #ffd9a1;
+    						font-size: 12px;
+    						font-style: oblique
+    					}
+    					.body{
+    						text-align: justify;
+    						color: $blanco;
+    						font-size: 12px;
+    					}
+
+    					.tecnologias_empleadas{
+    						margin-top: 20px;
+    						text-align: left;
+    						color: #ffd9a1;
+    						font-size: 12px;
+    						font-style: oblique;
+    						width: 100%;
+    						div{
+    							display: grid;
+    							gap:20px 5px;
+    							grid-template-columns: 1fr 1fr 1fr;
+    							div{
+    								display: block;
+    								text-align: center;
+    							}
+    						}
+    					}
+    				}
+    			}
+    			.node_experiencia_teaser:hover{
+    				transition: 1s;
+    				box-shadow: rgba(7, 234, 242, 0.5) 5px 5px, rgba(7, 234, 242, 0.3) 10px 10px, rgba(7, 234, 242, 0.2) 15px 15px, rgba(7, 234, 242, 0.1) 20px 20px, rgba(7, 234, 242, 0.05) 25px 25px;
+    				.title{
+    					a{
+    						color: #07eaf2;
+    						transition: 1s;
+    					}
+    				}
+    				.localizacion{
+    					color: #07eaf2;
+    					transition: 1s;
+    				}
+    			}
+    		}
+    	}
+    } */
   }
 }
 /* Fin de la Media Query para dispositivos de tipo escritorio */

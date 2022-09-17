@@ -22,6 +22,10 @@ $layout-breakpoint: 576px;
 		display: block;
 		width: 92%;
 		padding: 4%;
+		.box-1{
+			display: none;
+		}
+
 
 		/* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
 		background-image: url("back.jpg");
@@ -112,7 +116,12 @@ $layout-breakpoint: 576px;
 				}
 			}
 		}
-
+		.container-desktop{
+			display: none;
+		}
+		#block-views-block-galeria-experiencia-block-1{
+				display: none;
+		}
 		//Block experiencia (contenedor de los nodos de tipo Experiencia)
 		#block-views-block-experiencia-block-1{
 		margin-top: 4.5em;

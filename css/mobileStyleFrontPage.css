@@ -4,7 +4,8 @@
 para el sitio https://felipemiramontesr.net */
 /* 15/07/2022 */
 /* Variables*/
-/* Inicio de la Media Query para dispositivos de tipo movil */
+/* Punto de quiebre para dispositivos moviles*/
+/* Media Query para dispositivos de tipo movil */
 @media (max-width: 576px) {
   body {
     font-family: "Montserrat";
@@ -42,7 +43,7 @@ para el sitio https://felipemiramontesr.net */
     -moz-border-radius: 1000px;
     -webkit-border-radius: 1000px;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .nombre {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-1 .nombre {
     margin-top: 0.2em;
     font-size: 2.5em;
     font-weight: bolder;
@@ -50,7 +51,7 @@ para el sitio https://felipemiramontesr.net */
     text-align: center;
     cursor: default;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .apellidos {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-1 .apellidos {
     margin-top: 0.2em;
     font-size: 1.7em;
     text-align: center;
@@ -59,7 +60,7 @@ para el sitio https://felipemiramontesr.net */
     font-weight: bold;
     cursor: default;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .area_profesional {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-2 .area_profesional {
     margin-top: 0.5em;
     padding-bottom: 0.4em;
     font-size: 0.9em;
@@ -67,7 +68,7 @@ para el sitio https://felipemiramontesr.net */
     font-weight: bold;
     cursor: default;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .body {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-2 .body {
     margin-top: 0.625em;
     border-top: 0.06em solid #c6c8c8;
     border-bottom: 0.06em solid #c6c8c8;
@@ -76,22 +77,22 @@ para el sitio https://felipemiramontesr.net */
     text-align: center;
     cursor: default;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-3 .tecnologias {
     margin-top: 1.25em;
     font-size: 0.9em;
     color: #ffd9a1;
     font-weight: bold;
     cursor: default;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias .contenedor {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-3 .tecnologias .contenedor {
     display: grid;
     gap: 0.625em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .tecnologias .contenedor div {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-3 .tecnologias .contenedor div {
     text-align: center;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-4 {
     cursor: default;
     display: block;
     border-top: 0.06em solid #c6c8c8;
@@ -102,21 +103,25 @@ para el sitio https://felipemiramontesr.net */
     color: #c6c8c8;
     font-weight: bold;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico .correo_electronico {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-4 .correo_electronico {
+    color: #fff;
+    font-weight: bold;
     cursor: default;
     text-align: center;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .correo_electronico_numero_telefonico .numero_telefonico {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-4 .numero_telefonico {
+    color: #fff;
+    font-weight: bold;
     margin-top: 0.625em;
     cursor: default;
     text-align: center;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .curriculum_vitae {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-5 .curriculum_vitae {
     width: 100%;
     margin-top: 0.8em;
     text-align: center;
   }
-  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 .curriculum_vitae a {
+  .pagina_frontal #block-views-block-tarjeta-de-presentacion-block-1 div div div .node_tarjeta_de_presentacion_teaser .box_2 #row-5 .curriculum_vitae a {
     width: 100%;
     font-size: 1.2em;
     font-weight: bold;

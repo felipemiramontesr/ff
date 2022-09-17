@@ -56,65 +56,67 @@ $layout-breakpoint: 576px;
 							}
 							
 							.box_2{
-
-								.nombre{
-									margin-top:  0.2em;
-									font-size: 2.5em;
-									font-weight: bolder;
-									color: $blanco;
-									text-align:center;
-									cursor: default;	
+								#row-1{
+									.nombre{
+										margin-top:  0.2em;
+										font-size: 2.5em;
+										font-weight: bolder;
+										color: $blanco;
+										text-align:center;
+										cursor: default;	
+									}
+	
+									.apellidos{
+										margin-top: 0.2em;
+										font-size: 1.7em;
+										text-align: center;
+										font-style: oblique;
+										color: $blanco;
+										font-weight: bold;
+										cursor: default;
+	
+									}
 								}
-
-								.apellidos{
-									margin-top: 0.2em;
-									font-size: 1.7em;
-									text-align: center;
-									font-style: oblique;
-									color: $blanco;
-									font-weight: bold;
-									cursor: default;
-
+								#row-2{
+									.area_profesional{
+										margin-top: 0.5em;
+										padding-bottom:  0.4em;
+										font-size: 0.9em;
+										color: $naranja2;
+										font-weight: bold;
+										cursor: default;
+									}
+	
+									.body{
+										margin-top: 0.625em;
+										border-top: 0.06em solid $blanco;
+										border-bottom: 0.06em solid $blanco;
+										font-size: 0.9em;
+										color: $blanco;
+										text-align: center;
+										cursor: default;
+									}
 								}
-
-								.area_profesional{
-									margin-top: 0.5em;
-									padding-bottom:  0.4em;
-									font-size: 0.9em;
-									color: $naranja2;
-									font-weight: bold;
-									cursor: default;
+								#row-3{
+									.tecnologias{
+										margin-top: 1.25em;
+										font-size: 0.9em;
+										color: $naranja2;
+										font-weight: bold;
+										cursor: default;
+										
+										.contenedor{
+											display: grid;
+											gap: 0.625em;
+											grid-template-columns: 1fr 1fr 1fr ;
+	
+											div{
+												text-align: center;
+											}
+										}	
+									}
 								}
-
-								.body{
-									margin-top: 0.625em;
-									border-top: 0.06em solid $blanco;
-									border-bottom: 0.06em solid $blanco;
-									font-size: 0.9em;
-									color: $blanco;
-									text-align: center;
-									cursor: default;
-								}
-
-								.tecnologias{
-									margin-top: 1.25em;
-									font-size: 0.9em;
-									color: $naranja2;
-									font-weight: bold;
-									cursor: default;
-									
-									.contenedor{
-										display: grid;
-										gap: 0.625em;
-										grid-template-columns: 1fr 1fr 1fr 1fr;
-
-										div{
-											text-align: center;
-										}
-									}	
-								}
-
-								.correo_electronico_numero_telefonico{
+								#row-4{
 									cursor: default;
 									display: block;
 									border-top: 0.06em solid $blanco;
@@ -126,36 +128,41 @@ $layout-breakpoint: 576px;
 									font-weight: bold;
 
 									.correo_electronico{
+										color: #fff;
+										font-weight: bold;
 										cursor: default;
 										text-align: center;
 									}
 
 									.numero_telefonico{
+										color: #fff;
+										font-weight: bold;
 										margin-top: 0.625em;
 										cursor: default;
 										text-align: center;
 									}
 								}
-
-								.curriculum_vitae{
-									width: 100%;
-									margin-top: 0.8em;
-									text-align: center;
-
-									a{
-										width:100%;
-										font-size: 1.2em;
-										font-weight: bold;
-										background-color: $naranja2;
-										border: 1px solid $naranja2;
-										color: #474747;
-										padding: 10px 0px;
+								#row-5{
+									.curriculum_vitae{
+										width: 100%;
+										margin-top: 0.8em;
 										text-align: center;
-										text-decoration: none;
-										display: inline-block;
-										margin: 4px 2px;
-										cursor: pointer;
-										border-radius: 5px;
+	
+										a{
+											width:100%;
+											font-size: 1.2em;
+											font-weight: bold;
+											background-color: $naranja2;
+											border: 1px solid $naranja2;
+											color: #474747;
+											padding: 10px 0px;
+											text-align: center;
+											text-decoration: none;
+											display: inline-block;
+											margin: 4px 2px;
+											cursor: pointer;
+											border-radius: 5px;
+										}
 									}
 								}
 

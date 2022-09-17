@@ -14,8 +14,10 @@ $layout-breakpoint: 992px;
 /* Inicio de la Media Query para dispositivos de tipo escritorio */
 @media (min-width: $layout-breakpoint) {
 
+	/* <body></body> implicito: no posee representación grafica alguna*/
 	body{
 		font-family: "Montserrat"; 
+		overflow: hidden;
 	}
     
     /* Ocultar 'Suscribe' */
@@ -25,17 +27,20 @@ $layout-breakpoint: 992px;
 
     /* Creación de la página (felipemiramontesr.net): /home */
 	.pagina_frontal{
-		padding: 50px 100px;
-		
 		/* The image used */
-		background-image: url("back.jpg");
-		/* Full height */
-		height: 555px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+
+		background-image: url("back.jpg");	
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover; 
+
+
+		padding: 50px 100px;
 
 		.menu_principal{
 			position: absolute;
@@ -71,13 +76,15 @@ $layout-breakpoint: 992px;
 		.menu_principal_movil{
 			display: none;
 		}
+		/* <div id="block-views-block-tarjeta-de-presentacion-block-1" >
+		</div> implicito: no posee representación grafica alguna. Delega al nodo_..._teaser*/
 		#block-views-block-tarjeta-de-presentacion-block-1{
 			div{
 				div{
 					div{
 						.node_tarjeta_de_presentacion_teaser{
 							display: flex;
-							padding: 60px 80px 60px 80px;
+							padding: 40px 80px 40px 80px;
 							backdrop-filter: blur(20px) saturate(138%);
 						    -webkit-backdrop-filter: blur(20px) saturate(138%);
 						    background-color: rgba(255, 255, 255, 0.14);
@@ -85,11 +92,13 @@ $layout-breakpoint: 992px;
 						    border: 1px solid rgba(209, 213, 219, 0.3);
 						    cursor: default;
 							.box_1{
+								display: flex;
+								align-items: center;
 								.fotografia{
 									cursor: default;
 									img{
-										width: 400px;
-						    			height: 400px;
+										width: 420px;
+						    			height: 420px;
 						   				border-radius: 1000px;
 						   				-moz-border-radius: 1000px;
 						   				-webkit-border-radius: 1000px;
@@ -97,97 +106,106 @@ $layout-breakpoint: 992px;
 								}
 							}
 							.box_2{
-								margin-left: 40px;
-								.nombre{
-									font-size: 63px;
-									font-weight: bolder;
-									color: #000;
-									text-align: right;
-									cursor: default;	
-								}
-								.apellidos{
-									font-size: 36px;
-									text-align: right;
-									font-style: oblique;
-									color: $blanco;
-									font-weight: bold;
-									cursor: default;
+								display: flex;
+								align-items: center;
+								#container{
+									margin-left: 40px;
+									#row-1{
+										.nombre{
+											font-size: 63px;
+											font-weight: bolder;
+											color: #000;
+											text-align: right;
+											cursor: default;	
+										}
+										.apellidos{
+											font-size: 36px;
+											text-align: right;
+											font-style: oblique;
+											color: $blanco;
+											font-weight: bold;
+											cursor: default;
+		
+										}
+									}
+									#row-2{
+										.area_profesional{
+											margin-top: 20px;
+											font-size: 28px;
+											font-weight: bold;
+											cursor: default;
+										}
+										.body{
+											padding-left: 20px;
+											margin-top: 20px;
+											font-size: 18px;
+											color: #000;
+											text-align: justify;
+											border-left: 10px solid $blanco;
+											cursor: default;
+										}
+									}
+									#row-3{
+										.tecnologias{
+											font-size: 12px;
+											color: #c6c8c8;
+											cursor: default;
+											.contenedor{
+												display: grid;
+												gap: 10px 20px;
+												grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		
+												div{
+													display: block;
+													text-align: center;
+												}
+											}	
+										}
+									}
+									#row-4{
+										cursor: default;
+										display: flex;
+										margin-top: 20px;
+										font-size: 18px;
+										//font-weight: bold;
+										color: #000;
 
-								}
-								.area_profesional{
-									margin-top: 20px;
-									font-size: 30px;
-									font-weight: bold;
-									cursor: default;
-								}
-								.body{
-									padding-left: 20px;
-									margin-top: 20px;
-									font-size: 18px;
-									color: #000;
-									text-align: justify;
-									border-left: 5px solid $blanco;
-									cursor: default;
-								}
-								.tecnologias{
-									font-size: 16px;
-									color: #c6c8c8;
-									cursor: default;
-									.contenedor{
-										display: grid;
-										grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-										div{
+										.correo_electronico{
+											cursor: default;
+											width: 50%;
+											text-align: left;
+										}
+										.numero_telefonico{
+											cursor: default;
+											width: 50%;
+											text-align: right;
+										}
+									}
+									#row-5{
+										.curriculum_vitae{
+											width: 100%;
+											margin-top: 20px;
+											text-align: right;
+											a{
+											background-color: transparent;
+											font-size: 16px;
+											color: #c6c8c8;
+											padding: 10px;
 											text-align: center;
+											text-decoration: none;
+											display: inline-block;
+											margin: 4px 2px;
+											cursor: pointer;
+											border-radius: 5px;
+											border: 1px solid transparent;
+											transition: 2s;
+											}
+											a:hover{
+												border: 1px solid #c6c8c8;
+											}
 										}
 									}	
-								}
-
-								.correo_electronico_numero_telefonico{
-									cursor: default;
-									display: flex;
-									margin-top: 20px;
-									font-size: 18px;
-									font-weight: bold;
-									color: #000;
-									.correo_electronico{
-										cursor: default;
-										width: 50%;
-										text-align: left;
-									}
-									.numero_telefonico{
-										cursor: default;
-										width: 50%;
-										text-align: right;
-									}
-								}
-
-								.curriculum_vitae{
-										width: 100%;
-										margin-top: 20px;
-										text-align: right;
-										a{
-										  background-color: transparent;
-										  font-size: 16px;
-										  color: #c6c8c8;
-										  padding: 10px;
-										  text-align: center;
-										  text-decoration: none;
-										  display: inline-block;
-										  margin: 4px 2px;
-										  cursor: pointer;
-										  border-radius: 5px;
-										  border: 1px solid transparent;
-										  transition: 2s;
-										}
-										a:hover{
-											border: 1px solid #c6c8c8;
-										}
-								}
-
-								.iconos{
-								}
-
+								}		
 							}
 						}
 					}

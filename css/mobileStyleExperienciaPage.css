@@ -23,6 +23,9 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     /*Estilos para el menu "Footer" con el neón apagado*/
     /*Estilos para el menu "Footer" con el neón encendido*/
   }
+  .pagina_experiencia .box-1 {
+    display: none;
+  }
   .pagina_experiencia .menu_principal {
     display: none;
   }
@@ -81,6 +84,12 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
   }
   .pagina_experiencia .menu_header_experiencia_naranja nav ul li a {
     color: #ffd9a1;
+  }
+  .pagina_experiencia .container-desktop {
+    display: none;
+  }
+  .pagina_experiencia #block-views-block-galeria-experiencia-block-1 {
+    display: none;
   }
   .pagina_experiencia #block-views-block-experiencia-block-1 {
     margin-top: 4.5em;
