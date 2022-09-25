@@ -77,26 +77,33 @@ para el sitio https://felipemiramontesr.net/ciberblog */
   }
   .pagina_ciberblog #region_3 nav {
     background-color: #001eff;
+    border-radius: 40px 0px 0px 40px;
+    height: 100%;
     top: 0px;
     right: 0;
     position: fixed;
     z-index: 1;
   }
   .pagina_ciberblog #region_3 nav ul {
+    height: 100%;
     list-style: none;
     padding-left: 0;
-    text-align: center;
+    margin-top: -5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    /* 					li:last-child {
+    						padding-bottom: 100px;
+    					}	 */
   }
   .pagina_ciberblog #region_3 nav ul li {
     font-size: 14px;
-    padding: 40px 15px;
+    padding: 0px 15px;
     color: #edfee9;
   }
   .pagina_ciberblog #region_3 nav ul li a {
     color: #edfee9;
-  }
-  .pagina_ciberblog #region_3 nav ul li:last-child {
-    padding-bottom: 100px;
   }
 
   /* Fin de la Media Query para dispositivos de tipo escritorio **********/
