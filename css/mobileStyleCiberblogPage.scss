@@ -30,95 +30,70 @@ $layout-breakpoint: 576px;
         width: 92%;
 		padding: 4%;
 
-		/*Menu header*/
-        .movil_header_menu_ciberblog_page{
-			background-color: $green;
-			width: 100%;
-			top: 0;
-			left: 0;
-			position: fixed;
-			z-index: 1;
-			/* Efecto de doblés en patalla*/
-		    border-radius: 0px 0px 20px 20px;
+		#region_3{
+			display: grid;
+			grid-template-columns: 10fr 2fr; 
+			
+			/*bloque contenedor de los nodos (Tipo de contenido: article)*/
+			.blockViewsCiberblog{
+				margin-top: 2.5em;
+				margin-bottom: 4em;
 
-            nav{
-				ul{
-					list-style: none;
-					padding-left:0;
-					text-align: center;
-					display: grid;
-					grid-template-columns: 1fr 1fr 1fr 1fr;
-
-					li{
-					    font-size: 24px;
-
-						a{
-							color: $white;
-						}
-					}
-				}
-			}
-		}
-
-		/*bloque contenedor de los nodos (Tipo de contenido: article)*/
-		.blockViewsCiberblog{
-			margin-top: 2.5em;
-			margin-bottom: 4em;
-
-			#block-views-block-ciberblog-block-1{
-				div{
+				#block-views-block-ciberblog-block-1{
 					div{
-						.views-row{
-							/*Estilo del nodo (Tipo de contenido: article) teaser */
-							.node_article_teaser{
-								display: grid;
-								grid-template-columns: 3fr 13fr;
-								padding-bottom: 1.5em;
-								padding-top: 1.5em;
-								border-top: 1px solid $gray;
-								.box1{
-									/*Fotografia del autor del tipo de contenido (article) */
-									.authorPicture{
-										img{
-											width: 60px;
-											height: 60px;
-											   border-radius: 1000px;
-											   -moz-border-radius: 1000px;
-											   -webkit-border-radius: 1000px;
-										}	
-									}
-								}
-								.box2{
-									margin-top: 0.5em;
-									.containerDateRolName{
-										font-size: 1em;
-										font-weight: lighter;
-
-										.date{
-											font-size: 14px;
-											color: $blue;
-											font-weight: bold;
-										}
-										.containerRolName{
-											font-size: 22px;
-											margin-top: 5px;
-											.rol{
-
-											}
-											.name{
-												font-weight: bold;
-												color: $lightBlue;
-											}
-										}
-									}
-									.body{
-										.image{
-											width: 100%;
+						div{
+							.views-row{
+								/*Estilo del nodo (Tipo de contenido: article) teaser */
+								.node_article_teaser{
+									display: grid;
+									grid-template-columns: 3fr 13fr;
+									padding-bottom: 1.5em;
+									padding-top: 1.5em;
+									border-top: 1px solid $gray;
+									.box1{
+										/*Fotografia del autor del tipo de contenido (article) */
+										.authorPicture{
 											img{
-												object-fit: fill;
-												border-radius: 20px;
-												-moz-border-radius: 20px;
-												-webkit-border-radius: 20px;
+												width: 60px;
+												height: 60px;
+												border-radius: 1000px;
+												-moz-border-radius: 1000px;
+												-webkit-border-radius: 1000px;
+											}	
+										}
+									}
+									.box2{
+										margin-top: 0.5em;
+										.containerDateRolName{
+											font-size: 1em;
+											font-weight: lighter;
+
+											.date{
+												font-size: 14px;
+												color: $blue;
+												font-weight: bold;
+											}
+											.containerRolName{
+												font-size: 22px;
+												margin-top: 5px;
+												.rol{
+
+												}
+												.name{
+													font-weight: bold;
+													color: $lightBlue;
+												}
+											}
+										}
+										.body{
+											.image{
+												width: 100%;
+												img{
+													object-fit: fill;
+													border-radius: 20px;
+													-moz-border-radius: 20px;
+													-webkit-border-radius: 20px;
+												}
 											}
 										}
 									}
@@ -128,40 +103,33 @@ $layout-breakpoint: 576px;
 					}
 				}
 			}
-		}
-
-		/*Menu footer*/
-		.movil_footer_menu_ciberblog_page{
-			width: 100%;
-			bottom: 0;
-			left: 0;
-			position: fixed;
-			z-index: 1;
-			background-color: $blue;
-			/* Efecto de doblés en patalla*/
-		    border-radius: 20px 20px 0px 0px;
-
 			nav{
+				background-color: $blue;
+				//border-radius: 20px 0px 0px 20px;
+				top: 0px;
+				right: 0;
+				position: fixed;
+				z-index: 1;
+
 				ul{
 					list-style: none;
 					padding-left:0;
 					text-align: center;
-					display: grid;
-					grid-template-columns: 1fr 1fr 1fr 1fr;
 
 					li{
-					font-size: 24px;
-
+					font-size: 14px;
+					padding: 40px 15px;
+					color: $white;
 						a{
-							color: #ffffff;
+							color:$white;
 						}
-
 					}
+					li:last-child {
+						padding-bottom: 100px;
+					}			
+					
 				}
 			}
 		}
-
-
-
     } /* Fin de la Media Query para dispositivos de tipo escritorio **********/
 }

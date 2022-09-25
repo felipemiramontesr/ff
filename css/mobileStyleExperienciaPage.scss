@@ -62,7 +62,7 @@ $layout-breakpoint: 576px;
 					grid-template-columns: 1fr 1fr 1fr 1fr;
 
 					li{
-					    font-size: 24px;
+					    font-size: 14px;
 
 						a{
 							color: #ffffff;
@@ -106,7 +106,7 @@ $layout-breakpoint: 576px;
 					grid-template-columns: 1fr 1fr 1fr 1fr;
 
 					li{
-					font-size: 24px;
+					font-size: 14px;
 
 						a{
 							color: $naranja2;
@@ -116,6 +116,7 @@ $layout-breakpoint: 576px;
 				}
 			}
 		}
+		
 		.container-desktop{
 			display: none;
 		}
@@ -207,7 +208,7 @@ $layout-breakpoint: 576px;
 									margin-top: -0.5em;
 									text-align: justify;
 									color: $blanco;
-									font-size: 1.7em;
+									font-size: 1.2em;
 								}
 	
 								.tecnologias_empleadas{
@@ -259,7 +260,7 @@ $layout-breakpoint: 576px;
 					grid-template-columns: 1fr 1fr 1fr 1fr;
 
 					li{
-					font-size: 24px;
+					font-size: 14px;
 
 						a{
 							color: #ffffff;
@@ -303,7 +304,7 @@ $layout-breakpoint: 576px;
 					grid-template-columns: 1fr 1fr 1fr 1fr;
 
 					li{
-					font-size: 24px;
+					font-size: 14px;
 
 						a{
 							color: $azul;

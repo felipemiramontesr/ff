@@ -16,108 +16,87 @@ para el sitio https://felipemiramontesr.net/ciberblog */
   .pagina_ciberblog {
     width: 92%;
     padding: 4%;
-    /*Menu header*/
-    /*bloque contenedor de los nodos (Tipo de contenido: article)*/
-    /*Menu footer*/
   }
-  .pagina_ciberblog .movil_header_menu_ciberblog_page {
-    background-color: #00c479;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1;
-    /* Efecto de doblés en patalla*/
-    border-radius: 0px 0px 20px 20px;
-  }
-  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
+  .pagina_ciberblog #region_3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10fr 2fr;
+    /*bloque contenedor de los nodos (Tipo de contenido: article)*/
   }
-  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul li {
-    font-size: 24px;
-  }
-  .pagina_ciberblog .movil_header_menu_ciberblog_page nav ul li a {
-    color: #edfee9;
-  }
-  .pagina_ciberblog .blockViewsCiberblog {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog {
     margin-top: 2.5em;
     margin-bottom: 4em;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row {
     /*Estilo del nodo (Tipo de contenido: article) teaser */
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
     display: grid;
     grid-template-columns: 3fr 13fr;
     padding-bottom: 1.5em;
     padding-top: 1.5em;
     border-top: 1px solid #b9fbd0;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 {
     /*Fotografia del autor del tipo de contenido (article) */
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 .authorPicture img {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 .authorPicture img {
     width: 60px;
     height: 60px;
     border-radius: 1000px;
     -moz-border-radius: 1000px;
     -webkit-border-radius: 1000px;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 {
     margin-top: 0.5em;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName {
     font-size: 1em;
     font-weight: lighter;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .date {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .date {
     font-size: 14px;
     color: #001eff;
     font-weight: bold;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName {
     font-size: 22px;
     margin-top: 5px;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName .name {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName .name {
     font-weight: bold;
     color: #00b8ff;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image {
     width: 100%;
   }
-  .pagina_ciberblog .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image img {
+  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image img {
     object-fit: fill;
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
   }
-  .pagina_ciberblog .movil_footer_menu_ciberblog_page {
-    width: 100%;
-    bottom: 0;
-    left: 0;
+  .pagina_ciberblog #region_3 nav {
+    background-color: #001eff;
+    top: 0px;
+    right: 0;
     position: fixed;
     z-index: 1;
-    background-color: #001eff;
-    /* Efecto de doblés en patalla*/
-    border-radius: 20px 20px 0px 0px;
   }
-  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul {
+  .pagina_ciberblog #region_3 nav ul {
     list-style: none;
     padding-left: 0;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul li {
-    font-size: 24px;
+  .pagina_ciberblog #region_3 nav ul li {
+    font-size: 14px;
+    padding: 40px 15px;
+    color: #edfee9;
   }
-  .pagina_ciberblog .movil_footer_menu_ciberblog_page nav ul li a {
-    color: #ffffff;
+  .pagina_ciberblog #region_3 nav ul li a {
+    color: #edfee9;
+  }
+  .pagina_ciberblog #region_3 nav ul li:last-child {
+    padding-bottom: 100px;
   }
 
   /* Fin de la Media Query para dispositivos de tipo escritorio **********/

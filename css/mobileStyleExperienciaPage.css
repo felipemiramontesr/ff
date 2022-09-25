@@ -51,7 +51,7 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .pagina_experiencia .menu_header_experiencia nav ul li {
-    font-size: 24px;
+    font-size: 14px;
   }
   .pagina_experiencia .menu_header_experiencia nav ul li a {
     color: #ffffff;
@@ -80,7 +80,7 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .pagina_experiencia .menu_header_experiencia_naranja nav ul li {
-    font-size: 24px;
+    font-size: 14px;
   }
   .pagina_experiencia .menu_header_experiencia_naranja nav ul li a {
     color: #ffd9a1;
@@ -168,7 +168,7 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     margin-top: -0.5em;
     text-align: justify;
     color: #c6c8c8;
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
   .pagina_experiencia #block-views-block-experiencia-block-1 div div div .node_experiencia_teaser .box2 .tecnologias_empleadas {
     text-align: left;
@@ -207,7 +207,7 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .pagina_experiencia .menu_footer_experiencia nav ul li {
-    font-size: 24px;
+    font-size: 14px;
   }
   .pagina_experiencia .menu_footer_experiencia nav ul li a {
     color: #ffffff;
@@ -236,7 +236,7 @@ para la página (/node/25): https://felipemiramontesr.net/experiencia */
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .pagina_experiencia .menu_footer_experiencia_azul nav ul li {
-    font-size: 24px;
+    font-size: 14px;
   }
   .pagina_experiencia .menu_footer_experiencia_azul nav ul li a {
     color: #94ebee;

@@ -1,20 +1,22 @@
 <div class="node_experiencia_galeria_experiencia">
 
     <div class="box1">
-         <div class="image">{{content.field_image}}</div>
+         <div class="image" id="image">{{content.field_image}}</div>
     </div>
 
     <div class="box2">
-        <div class="title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></div>
+        <div class="title" id="title"> {{ label }} </div>
    
-        <div class="localizacion"> {{content.field_localizacion}}</div>
+        <div class="localizacion" id="localizacion"> {{content.field_localizacion}}</div>
 
-        <div class="fechas">{{ content.field_fechas }}</div>
+        <div class="fechas" id="fechas"> {{ content.field_fechas }}</div>
 
-        <div class="tipo_de_empleo">{{ content.field_ti }}</div>
+        <div class="tipo_de_empleo" id="tipo_de_empleo">{{ content.field_ti }}</div>
 
-        <div class="body"><p>{{ content.body }}</p></div>
+        <div class="body" id="body"><p>{{ content.body }}</p></div>
         
-        <div class="tecnologias_empleadas">{{ content.field_tecnologias_empleadas }}</div>
+        <div class="tecnologias_empleadas_start" id="tecnologias_empleadas">{{ content.field_tecnologias_empleadas }}</div>
+
+        <div class="detalles" id="detalles"> <a href="{{ url }}" rel="bookmark"> Ver detalles </a> </div>
     </div>
 </div>
