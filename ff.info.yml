@@ -9,6 +9,7 @@ stylesheets-remove:
 libraries:
   - ff/global-css
   - ff/global-js
+  - ff/global-fontawesome
 regions:
   content: 'Main Content'
   section_1: 'Section one'

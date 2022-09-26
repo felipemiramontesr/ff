@@ -14,3 +14,8 @@ global-js:
     js/desktopJSExperienciaPageGallery.js: {}
   dependencies:
     - core/jquery
+global-fontawesome:
+  version: 6.2.0
+  css:
+    theme:
+      fontawesome/css/fontawesome.min.css: {}

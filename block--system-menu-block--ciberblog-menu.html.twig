@@ -1,4 +1,4 @@
-<div class="movil_footer_menu_ciberblog_page" id="movil_footer_menu_ciberblog_page">
+<div id="mobile_ciberblog_menu"> 
   {% set heading_id = attributes.id ~ '-menu'|clean_id %}
   <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
     {# Label. If not displayed, we still provide it for screen readers. #}
@@ -14,4 +14,9 @@
       {{ content }}
     {% endblock %}
   </nav>
+
+  <div id="menu_start_button">
+     <i class="fa-solid fa-compass"></i>
+  </div>
+
 </div>
