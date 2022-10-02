@@ -14,113 +14,230 @@ para el sitio https://felipemiramontesr.net/ciberblog */
   ***************************************************************************
   ff************************************************************************/
   .pagina_ciberblog {
-    width: 92%;
-    padding: 4%;
+    width: 96%;
+    padding: 2%;
+    /* Asignar la imagen 'back.jpg' como "fondo de pantalla"*/
+    background-image: url("back.jpg");
+    /* The image used */
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */
   }
-  .pagina_ciberblog #region_3 {
-    display: grid;
-    grid-template-columns: 10fr 2fr;
-    /*bloque contenedor de los nodos (Tipo de contenido: article)*/
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog {
-    margin-top: 2.5em;
-    margin-bottom: 4em;
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row {
-    /*Estilo del nodo (Tipo de contenido: article) teaser */
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
-    display: grid;
-    grid-template-columns: 3fr 13fr;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
-    border-top: 1px solid #b9fbd0;
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 {
-    /*Fotografia del autor del tipo de contenido (article) */
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box1 .authorPicture img {
-    width: 60px;
-    height: 60px;
+  .pagina_ciberblog .menu_start_button_on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(198, 41, 41, 0.8);
     border-radius: 1000px;
     -moz-border-radius: 1000px;
     -webkit-border-radius: 1000px;
+    height: 70px;
+    width: 70px;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+    z-index: 1;
   }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 {
-    margin-top: 0.5em;
+  .pagina_ciberblog .menu_start_button_on .fa-bars {
+    font-size: 24px;
+    padding: 0px 5px;
+    color: #edfee9;
   }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName {
-    font-size: 1em;
-    font-weight: lighter;
+  .pagina_ciberblog .menu_start_button_off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 198, 85, 0.8);
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    height: 70px;
+    width: 70px;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+    z-index: 1;
   }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .date {
-    font-size: 14px;
-    color: #001eff;
-    font-weight: bold;
+  .pagina_ciberblog .menu_start_button_off .fa-bars {
+    font-size: 24px;
+    padding: 0px 5px;
+    color: #edfee9;
   }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName {
-    font-size: 22px;
-    margin-top: 5px;
+  .pagina_ciberblog .region_3_off {
+    display: grid;
+    grid-template-columns: 100% 0%;
   }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .containerDateRolName .containerRolName .name {
-    font-weight: bold;
-    color: #00b8ff;
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image {
-    width: 100%;
-  }
-  .pagina_ciberblog #region_3 .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser .box2 .body .image img {
-    object-fit: fill;
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
+    margin: 20px 20px;
     border-radius: 20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu nav {
-    background-color: #001eff;
-    border-radius: 40px 0px 0px 40px;
-    height: 80%;
-    top: 0px;
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover {
+    position: relative;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover div img {
+    width: 100%;
+    height: 630px;
+    border-radius: 20px;
+    filter: brightness(0.5);
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container {
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #picture img {
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date {
+    display: block;
+    padding-left: 10px;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date #name {
+    font-size: 24px;
+    color: #edfee9;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date #date {
+    font-size: 14px;
+    color: #edfee9;
+    font-style: italic;
+  }
+  .pagina_ciberblog .region_3_off .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 20px 20px;
+    width: 90%;
+    color: #edfee9;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .pagina_ciberblog .region_3_off #mobile_ciberblog_menu .nav_ciberblog_showed {
+    background-color: rgba(255, 153, 0, 0.774);
+    color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    height: 85%;
+    top: 0;
     right: 0;
     position: fixed;
     z-index: 1;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu nav ul {
+  .pagina_ciberblog .region_3_off #mobile_ciberblog_menu .nav_ciberblog_showed ul {
     height: 100%;
     list-style: none;
     padding-left: 0;
-    margin-top: -5px;
+    margin-top: -2px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu nav ul li {
+  .pagina_ciberblog .region_3_off #mobile_ciberblog_menu .nav_ciberblog_showed ul li {
     font-size: 14px;
-    padding: 0px 15px;
+    padding: 0px 10px;
     color: #edfee9;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu nav ul li a {
+  .pagina_ciberblog .region_3_off #mobile_ciberblog_menu .nav_ciberblog_showed ul li a {
     color: #edfee9;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu #menu_start_button {
+  .pagina_ciberblog .region_3_on {
+    display: grid;
+    grid-template-columns: 90% 10%;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser {
+    margin: 15px 15px;
+    border-radius: 20px;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover {
+    position: relative;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover div img {
+    width: 100%;
+    height: 540px;
+    border-radius: 20px;
+    filter: brightness(0.5);
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #bd3232;
-    border-radius: 40px 0px 0px 40px;
-    height: 20%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #picture img {
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date {
+    display: block;
+    padding-left: 10px;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date #name {
+    font-size: 24px;
+    color: #edfee9;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #picture_name_date_container #name_date #date {
+    font-size: 14px;
+    color: #edfee9;
+    font-style: italic;
+  }
+  .pagina_ciberblog .region_3_on .blockViewsCiberblog #block-views-block-ciberblog-block-1 div div .views-row .node_article_teaser #cover #body {
+    position: absolute;
     bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 20px 20px;
+    width: 90%;
+    color: #edfee9;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .pagina_ciberblog .region_3_on #mobile_ciberblog_menu .nav_ciberblog_showed {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    height: 85%;
+    top: 0;
     right: 0;
     position: fixed;
     z-index: 1;
   }
-  .pagina_ciberblog #region_3 #mobile_ciberblog_menu #menu_start_button .fa-compass {
+  .pagina_ciberblog .region_3_on #mobile_ciberblog_menu .nav_ciberblog_showed ul {
+    height: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .pagina_ciberblog .region_3_on #mobile_ciberblog_menu .nav_ciberblog_showed ul li {
     font-size: 14px;
-    padding: 0px 15px;
+    padding: 0px 10px;
     color: #edfee9;
   }
-
-  /* Fin de la Media Query para dispositivos de tipo escritorio **********/
+  .pagina_ciberblog .region_3_on #mobile_ciberblog_menu .nav_ciberblog_showed ul li a {
+    color: #edfee9;
+  }
 }
 
 /*# sourceMappingURL=mobileStyleCiberblogPage.css.map */

@@ -1,6 +1,6 @@
 <div id="mobile_ciberblog_menu"> 
   {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-  <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+  <nav class="nav_ciberblog_showed" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
     {# Label. If not displayed, we still provide it for screen readers. #}
     {% if not configuration.label_display %}
       {% set title_attributes = title_attributes.addClass('visually-hidden') %}
@@ -14,9 +14,7 @@
       {{ content }}
     {% endblock %}
   </nav>
-
-  <div id="menu_start_button">
+  {# <div class= "menu_start_button_off" id="menu_start_button">
      <i class="fa-solid fa-compass"></i>
-  </div>
-
+  </div> #}
 </div>

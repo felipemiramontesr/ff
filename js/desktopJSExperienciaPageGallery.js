@@ -1,10 +1,9 @@
 /****************************************************************************************************
-Efecto de neón (box-shadow) según la dirección del scroll en los menús ******************************
-header y footer de la pagína 'experiencia' '/nodo/25' en su versión movil ***************************
+Image gallery: RESTFUL API, async(), fetch(), await() |**********************************************
 ff**************************************************************************************************/
 
 // A $( document ).ready() block.
-$( document ).ready(function() {
+$(document).ready(function() {
 
     $("#r1").on( "click", function() {
         $("#r1").removeClass("r1-off").addClass("r1-on");
@@ -372,7 +371,5 @@ $( document ).ready(function() {
                 }
         }
         chargeDataR7();
-7
     }); 
-    
 });

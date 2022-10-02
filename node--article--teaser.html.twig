@@ -1,43 +1,31 @@
-<div class="node_article_teaser">
-
-    <div class="box1">
-
-        <div class="authorPicture"> 
-            {{ author_picture }}
+<div class="node_article_teaser">    
+    <div id="card">
+        <div id="header">
+            <div id="box-1">
+                <div id="picture">
+                    {{ author_picture }}
+                </div>
+            </div>
+            <div id="box-2">
+                 <div id="name">
+                    {{ author_name }} 
+                </div>
+                <div id="date">
+                  <i class="fa-thin fa-calendar-clock"></i>  
+                  {{ date }} 
+                </div> 
+            </div>
         </div>
-
+        <div id="content">
+            <div id="body">
+                <p>{{ content.body }}</p>
+            </div>
+            <div id="image">
+               {{ content.field_image}}
+            </div>      
+       </div>
+       <div id="footer">
+               FJ
+        </div> 
     </div>
-
-    <div class="box2">
-
-        <div class="containerDateRolName">           
-            <div class="date">
-                {{ date }} 
-            </div>
-            <div class="containerRolName">
-                <span class="singleText">
-                  El  
-                </span>             
-                <span class="rol">
-                    {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %}
-                </span>
-                <span class="name">
-                    {{ author_name }}
-                </span>
-                <span class="singleText">
-                   dice: 
-                </span>
-            </div>
-        </div>
-
-        <div class="body">
-            <p>{{ content.body }}</p>
-
-            <div class="image">
-                {{ content.field_image}}
-            </div>
-        </div>
-
-    </div>
-
 </div>
